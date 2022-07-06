@@ -1,6 +1,6 @@
 #! /bin/bash -e
 
-NAME=zookeeper
+NAME=mysql
 ID=-$(date +%Y%m%d%H%M%S)
 RN=${NAME}$ID
 POD=$RN-0
@@ -15,11 +15,9 @@ helm install --wait $RN charts/${NAME}
 
 echo testing
 
-$POD_EXEC_I "bin/zkCli.sh -server zookeeper:2181" <<END
-create $NODE
-set $NODE bar
-get $NODE 
-END
+helm test $RN
+
+$POD_EXEC "echo 'create table foo (bar varchar(100));' | mysql -h$RN  -uroot -prootpassword -o eventuate -P 3306"
 
 echo deleting
 
@@ -29,9 +27,9 @@ kubectl wait --for=condition=ready pod --timeout=90s $POD
 
 echo testing persistence
 
-$POD_EXEC "echo get $NODE | bin/zkCli.sh -server zookeeper:2181"
+sleep 10
 
-# kubectl exec zookeeper-0 -- bash -c "echo get /foo | bin/zkCli.sh -server zookeeper:2181"
+$POD_EXEC "echo 'select * from foo;' | mysql -h$RN  -uroot -prootpassword -o eventuate -P 3306"
 
 echo
 echo

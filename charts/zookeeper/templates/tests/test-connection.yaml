@@ -8,8 +8,14 @@ metadata:
     "helm.sh/hook": test
 spec:
   containers:
-    - name: wget
-      image: busybox
-      command: ['wget']
-      args: ['{{ include "zookeeper.fullname" . }}:{{ .Values.service.port }}']
+    - name: zk
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+      command: ['bash']
+      args:
+        - "-c"
+        - | 
+          ID=-$(date +%Y%m%d%H%M%S)
+          echo "create /foo$ID" | ./bin/zkCli.sh -server zookeeper:2181 && \
+          echo "set /foo$ID bar" | ./bin/zkCli.sh -server zookeeper:2181 && \
+          echo "get /foo$ID" | ./bin/zkCli.sh -server zookeeper:2181
   restartPolicy: Never

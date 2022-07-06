@@ -16,6 +16,12 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
+    
+    - name: Test-ZK
+      run: ./test-zookeeper.sh
+
+    - name: Test-mysql
+      run: ./test-mysql.sh
 
     - name: Configure Git
       run: |
