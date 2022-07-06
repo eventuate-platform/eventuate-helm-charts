@@ -23,7 +23,7 @@ jobs:
     - name: Prepare
       id: prep
       run: |
-        echo VERSION=$(./determine-version.sh)
+        VERSION=$(./determine-version.sh)
         echo ::set-output name=VERSION::${VERSION}
 
     - name: Publish charts
