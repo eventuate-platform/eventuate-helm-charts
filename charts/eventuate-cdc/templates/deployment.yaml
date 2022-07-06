@@ -69,5 +69,11 @@ spec:
             - name: JAVA_OPTS
               value: "-Xmx64m"
           envFrom:
+          {{ if .Values.cdc.defaultEnabled }}
           - configMapRef:
               name: {{ include "eventuate-cdc.fullname" . }}-pipeline-config
+          {{ end }}
+          {{- range .Values.cdc.envFroms }}
+          - configMapRef:
+              name: {{ . }}
+          {{- end }} 

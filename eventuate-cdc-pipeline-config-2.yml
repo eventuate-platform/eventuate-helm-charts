@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: eventuate-cdc-pipeline-config-2
+data:
+  BLAH: jdbc:mysql://mysql/eventuate

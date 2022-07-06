@@ -1,7 +1,8 @@
+{{ if .Values.cdc.defaultEnabled }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: eventuate-cdc-pipeline-config
+  name: {{ include "eventuate-cdc.fullname" . }}-pipeline-config
 data:
   SPRING_DATASOURCE_URL: jdbc:mysql://mysql/eventuate
   SPRING_DATASOURCE_USERNAME: mysqluser
@@ -16,3 +17,4 @@ data:
   EVENTUATELOCAL_CDC_MYSQL_BINLOG_CLIENT_UNIQUE_ID: "1234567890"
   EVENTUATELOCAL_CDC_READ_OLD_DEBEZIUM_DB_OFFSET_STORAGE_TOPIC: "false"
   EVENTUATE_OUTBOX_ID: "1"
+{{ end }}

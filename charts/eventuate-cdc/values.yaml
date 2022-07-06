@@ -80,3 +80,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+cdc:
+  defaultEnabled: true
+  envFroms:
+      - eventuate-cdc-pipeline-config-2

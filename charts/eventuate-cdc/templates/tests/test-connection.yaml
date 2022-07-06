@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "eventuate-cdc.fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "eventuate-cdc.fullname" . }}:{{ .Values.service.port }}/actuator/health']
   restartPolicy: Never
