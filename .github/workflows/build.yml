@@ -16,6 +16,8 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
+
+    - uses: engineerd/setup-kind@v0.5.0
     
     - name: Test-ZK
       run: ./test-zookeeper.sh
