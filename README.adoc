@@ -1,0 +1,6 @@
+= Eventuate Helm Charts
+
+Simple helm charts for deploying Eventuate platform services on Kubernetes.
+
+Deploys images that support Intel/AMD and Arm.
+
