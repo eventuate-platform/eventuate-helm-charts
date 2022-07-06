@@ -27,7 +27,9 @@ jobs:
         echo ::set-output name=VERSION::${VERSION}
 
     - name: Publish charts
-      run: ./publish-charts.sh ${{ steps.prep.outputs.VERSION }}
+      run: |
+        echo ${{ steps.prep.outputs.VERSION }}
+        ./publish-charts.sh ${{ steps.prep.outputs.VERSION }}
 
 #    - name: Run chart-releaser
 #      env:
