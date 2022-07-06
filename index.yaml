@@ -1,0 +1,47 @@
+apiVersion: v1
+entries:
+  eventuate-cdc:
+  - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220706192730
+    created: "2022-07-06T19:27:31.22357347Z"
+    description: A Helm chart for Kubernetes
+    digest: 9786339fadf39a225cef860035617a6eb3e076abee63485c3e3f01828aef9e0b
+    name: eventuate-cdc
+    type: application
+    urls:
+    - eventuate-cdc-v0.0.1-BUILD.20220706192730.tgz
+    version: v0.0.1-BUILD.20220706192730
+  kafka:
+  - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220706192730
+    created: "2022-07-06T19:27:31.224070067Z"
+    description: A Helm chart for Kubernetes
+    digest: 47c35a0644729d081141b20aeb27d9f648b708b88a383ace291f2ba80b568546
+    name: kafka
+    type: application
+    urls:
+    - kafka-v0.0.1-BUILD.20220706192730.tgz
+    version: v0.0.1-BUILD.20220706192730
+  mysql:
+  - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220706192730
+    created: "2022-07-06T19:27:31.224416365Z"
+    description: A Helm chart for deploying Eventuate MySQL image
+    digest: 556cebab195394ba051a9d07237154d056f69fc3e8573d49f2b27f6c3d99d23e
+    name: mysql
+    type: application
+    urls:
+    - mysql-v0.0.1-BUILD.20220706192730.tgz
+    version: v0.0.1-BUILD.20220706192730
+  zookeeper:
+  - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220706192730
+    created: "2022-07-06T19:27:31.224881263Z"
+    description: A Helm chart for Kubernetes
+    digest: 2f95bd689848e79ca9ebc5a0c24505caed3a50ae7d5db3cc25297ee430f301be
+    name: zookeeper
+    type: application
+    urls:
+    - zookeeper-v0.0.1-BUILD.20220706192730.tgz
+    version: v0.0.1-BUILD.20220706192730
+generated: "2022-07-06T19:27:31.222674374Z"
