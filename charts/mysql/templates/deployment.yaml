@@ -33,9 +33,20 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
-              containerPort: 3306
+            - containerPort: 3306
               protocol: TCP
+          livenessProbe:
+            exec:
+              command:
+              - bash
+              - -c
+              - "/healthcheck.sh"
+          readinessProbe:
+            exec:
+              command:
+              - bash
+              - -c
+              - "/healthcheck.sh"
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
