@@ -15,7 +15,7 @@ helm install --wait $RN charts/${NAME}
 
 echo testing
 
-$POD_EXEC_I "bin/zkCli.sh -server zookeeper:2181" <<END
+$POD_EXEC_I "bin/zkCli.sh -server $RN:2181" <<END
 create $NODE
 set $NODE bar
 get $NODE 
@@ -29,7 +29,7 @@ kubectl wait --for=condition=ready pod --timeout=90s $POD
 
 echo testing persistence
 
-$POD_EXEC "echo get $NODE | bin/zkCli.sh -server zookeeper:2181"
+$POD_EXEC "echo get $NODE | bin/zkCli.sh -server $RN:2181"
 
 # kubectl exec zookeeper-0 -- bash -c "echo get /foo | bin/zkCli.sh -server zookeeper:2181"
 
