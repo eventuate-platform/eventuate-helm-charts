@@ -6,9 +6,11 @@ VERSION=${1?}
 # Perhaps have the commit SHA in repo
 
 
-git worktree add helm-repository helm-repository
-sed -i -e "s/^appVersion:.*$/appVersion: $VERSION/" */Chart.yaml
-sed -i -e "s/^version:.*$/version: $VERSION/" */Chart.yaml
+if [ ! -d helm-repository ] ; then
+    git worktree add helm-repository helm-repository
+fi
+
+sed -i '' -e "s/^appVersion:.*$/appVersion: $VERSION/" -e "s/^version:.*$/version: $VERSION/" charts/*/Chart.yaml
 ls -d charts/* | xargs -n1 -I XYZ helm package XYZ -d helm-repository
 cd helm-repository
 helm repo index .
