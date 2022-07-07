@@ -8,8 +8,8 @@ metadata:
     "helm.sh/hook": test
 spec:
   containers:
-    - name: wget
-      image: busybox
-      command: ['wget']
-      args: ['{{ include "kafka.fullname" . }}:{{ .Values.service.port }}']
+    - name: kafka-cli
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+      command: ['bin/kafka-topics.sh', '--list', '--bootstrap-server', '{{ include "kafka.fullname" . }}:{{ .Values.service.port }}']
+      args: []
   restartPolicy: Never

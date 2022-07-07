@@ -39,6 +39,9 @@ jobs:
     - name: Test-mysql
       run: ./test-mysql.sh
 
+    - name: Test-kafka
+      run: ./test-kafka.sh
+
     - name: get container logs
       run: ./.github/workflows/print-container-logs.sh
       if: ${{ always() }}
@@ -50,6 +53,18 @@ jobs:
         name: container-logs
         path: ~/container-logs
         
+    - name: get pod logs
+      run: ./.github/workflows/print-pod-logs.sh
+      if: ${{ always() }}
+
+    - name: Save pod logs
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: pod-logs
+        path: ~/pod-logs
+        
+
     - name: Configure Git
       run: |
         git config user.name "$GITHUB_ACTOR"
