@@ -1,0 +1,9 @@
+version:               2
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          command: ./build-and-test-all.sh
