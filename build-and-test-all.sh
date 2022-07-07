@@ -4,8 +4,10 @@ sudo ./install-k8s-tools.sh
 
 kind create cluster
 
-./test-zookeeper.sh
+for script in ./test-zookeeper.sh ./test-kafka.sh ./test-mysql.sh do
 
-./test-kafka.sh
+echo ====== $script
 
-./test-mysql.sh
+$script
+
+done
