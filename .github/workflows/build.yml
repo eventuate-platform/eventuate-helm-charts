@@ -39,6 +39,17 @@ jobs:
     - name: Test-mysql
       run: ./test-mysql.sh
 
+    - name: get container logs
+      run: ./.github/workflows/print-container-logs.sh
+      if: ${{ always() }}
+
+    - name: Save container logs
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: container-logs
+        path: ~/container-logs
+        
     - name: Configure Git
       run: |
         git config user.name "$GITHUB_ACTOR"
