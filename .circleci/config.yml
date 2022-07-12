@@ -10,4 +10,11 @@ jobs:
       - run: ./test-zookeeper.sh          
       - run: ./test-mysql.sh                    
       - run: ./test-kafka.sh                              
-      - run: ./test-keycloak.sh                              
+      - run: ./test-keycloak.sh         
+      - run:
+          name: publish
+          command: |
+            VERSION=$(./determine-version.sh)
+            echo $VERSION
+            ./publish-charts.sh $VERSION
+                     
