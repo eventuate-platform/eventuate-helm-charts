@@ -10,3 +10,4 @@ jobs:
       - run: ./test-zookeeper.sh          
       - run: ./test-mysql.sh                    
       - run: ./test-kafka.sh                              
+      - run: ./test-keycloak.sh                              
