@@ -3,7 +3,7 @@ entries:
   eventuate-cdc:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-07-06T21:08:10.528591444Z"
+    created: "2022-07-13T16:11:31.751008918Z"
     description: A Helm chart for Kubernetes
     digest: c2523bc34bda1adeee50331fc35e0e4efe45908eff08c6332f7976e58a84e37d
     name: eventuate-cdc
@@ -12,8 +12,18 @@ entries:
     - eventuate-cdc-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220713161131
+    created: "2022-07-13T16:11:31.750337468Z"
+    description: A Helm chart for Kubernetes
+    digest: 130914a7b63c825eb962f5703f2cf5041f2e50f76b0f352b3f47441fa35857ec
+    name: eventuate-cdc
+    type: application
+    urls:
+    - eventuate-cdc-v0.0.1-BUILD.20220713161131.tgz
+    version: v0.0.1-BUILD.20220713161131
+  - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2022-07-06T21:08:10.528101645Z"
+    created: "2022-07-13T16:11:31.749994195Z"
     description: A Helm chart for Kubernetes
     digest: e6e10a3c67d7dee907732c6b7515c702ac2df3ba1889a91a70ada5147b28f95f
     name: eventuate-cdc
@@ -23,7 +33,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2022-07-06T21:08:10.527602647Z"
+    created: "2022-07-13T16:11:31.749664275Z"
     description: A Helm chart for Kubernetes
     digest: 4f20b84530a47fd8bf9e84222c0a13470d5ba9f897865fd4c9424ddad8e8eb38
     name: eventuate-cdc
@@ -33,7 +43,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2022-07-06T21:08:10.527087348Z"
+    created: "2022-07-13T16:11:31.749286181Z"
     description: A Helm chart for Kubernetes
     digest: 9786339fadf39a225cef860035617a6eb3e076abee63485c3e3f01828aef9e0b
     name: eventuate-cdc
@@ -44,7 +54,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-07-06T21:08:10.530461038Z"
+    created: "2022-07-13T16:11:31.753501363Z"
     description: A Helm chart for Kubernetes
     digest: 13bed89decf251f916f8f513c048d559337b41af419d061dc81ccbea370f35da
     name: kafka
@@ -53,8 +63,18 @@ entries:
     - kafka-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220713161131
+    created: "2022-07-13T16:11:31.753128393Z"
+    description: A Helm chart for Kubernetes
+    digest: defbd1a718149da1f685361a826a30951be5a1b22f29e17493043391cf1c8e0f
+    name: kafka
+    type: application
+    urls:
+    - kafka-v0.0.1-BUILD.20220713161131.tgz
+    version: v0.0.1-BUILD.20220713161131
+  - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2022-07-06T21:08:10.52999134Z"
+    created: "2022-07-13T16:11:31.752798643Z"
     description: A Helm chart for Kubernetes
     digest: 67f20dfdcbf5940260914f41ab609892fc976cebb678f2a819faf85a0882dbcd
     name: kafka
@@ -64,7 +84,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2022-07-06T21:08:10.529517241Z"
+    created: "2022-07-13T16:11:31.752471392Z"
     description: A Helm chart for Kubernetes
     digest: f98a1fa6499bf1abf604f8a3ac57d03b52589e7125216277887da2be65bd6f2e
     name: kafka
@@ -74,7 +94,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2022-07-06T21:08:10.529062942Z"
+    created: "2022-07-13T16:11:31.752024845Z"
     description: A Helm chart for Kubernetes
     digest: 47c35a0644729d081141b20aeb27d9f648b708b88a383ace291f2ba80b568546
     name: kafka
@@ -82,10 +102,21 @@ entries:
     urls:
     - kafka-v0.0.1-BUILD.20220706192730.tgz
     version: v0.0.1-BUILD.20220706192730
+  keycloak:
+  - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220713161131
+    created: "2022-07-13T16:11:31.75411486Z"
+    description: A Helm chart for Kubernetes
+    digest: 35e7956c977f58137a592f2836e7d1f6d32923f04ec3c40be4ea348fe981e75f
+    name: keycloak
+    type: application
+    urls:
+    - keycloak-v0.0.1-BUILD.20220713161131.tgz
+    version: v0.0.1-BUILD.20220713161131
   mysql:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-07-06T21:08:10.531715134Z"
+    created: "2022-07-13T16:11:31.755228639Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: b3dfb8f4e858ab02b1285f09c3b172ea16161c81e3ab8ba8589ca93afba5f334
     name: mysql
@@ -94,8 +125,18 @@ entries:
     - mysql-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220713161131
+    created: "2022-07-13T16:11:31.755000592Z"
+    description: A Helm chart for deploying Eventuate MySQL image
+    digest: 65b832212f612c2370bc5c0fff61b63284b394dbd9bd1efb7d29eaa83c099b50
+    name: mysql
+    type: application
+    urls:
+    - mysql-v0.0.1-BUILD.20220713161131.tgz
+    version: v0.0.1-BUILD.20220713161131
+  - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2022-07-06T21:08:10.531407635Z"
+    created: "2022-07-13T16:11:31.75477165Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: fb72600569435fd27a495630ef0bdc314fa91b01177b464a1fa4fd6f80d4afa3
     name: mysql
@@ -105,7 +146,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2022-07-06T21:08:10.531092336Z"
+    created: "2022-07-13T16:11:31.754554801Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 31a8dcbfd81dcd81daf18bc8ce658c98beae54ada9987c967892b86c24488931
     name: mysql
@@ -115,7 +156,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2022-07-06T21:08:10.530782537Z"
+    created: "2022-07-13T16:11:31.754342413Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 556cebab195394ba051a9d07237154d056f69fc3e8573d49f2b27f6c3d99d23e
     name: mysql
@@ -126,7 +167,7 @@ entries:
   zookeeper:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-07-06T21:08:10.534469926Z"
+    created: "2022-07-13T16:11:31.756906357Z"
     description: A Helm chart for Kubernetes
     digest: 67cd04a68e149ea0c889dbb0345eb57363a013b59532d2b8eea4c3b7872ce5e6
     name: zookeeper
@@ -135,8 +176,18 @@ entries:
     - zookeeper-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: v0.0.1-BUILD.20220713161131
+    created: "2022-07-13T16:11:31.756588288Z"
+    description: A Helm chart for Kubernetes
+    digest: 79dad5ac908df5c021575a5edcf8033fe2ad418838fc587b93089c795441b90e
+    name: zookeeper
+    type: application
+    urls:
+    - zookeeper-v0.0.1-BUILD.20220713161131.tgz
+    version: v0.0.1-BUILD.20220713161131
+  - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2022-07-06T21:08:10.533769028Z"
+    created: "2022-07-13T16:11:31.756238851Z"
     description: A Helm chart for Kubernetes
     digest: ca67a8f4b0ff64e41bbc9d48b2f33901bf6069ff42e6e5b7c6ffe3bcddb03c20
     name: zookeeper
@@ -146,7 +197,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2022-07-06T21:08:10.53310563Z"
+    created: "2022-07-13T16:11:31.755868451Z"
     description: A Helm chart for Kubernetes
     digest: 2dc466ace623592eab87d856f005040618eecf14358399aab240612ab4d32fe6
     name: zookeeper
@@ -156,7 +207,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2022-07-06T21:08:10.532133733Z"
+    created: "2022-07-13T16:11:31.755545752Z"
     description: A Helm chart for Kubernetes
     digest: 2f95bd689848e79ca9ebc5a0c24505caed3a50ae7d5db3cc25297ee430f301be
     name: zookeeper
@@ -164,4 +215,4 @@ entries:
     urls:
     - zookeeper-v0.0.1-BUILD.20220706192730.tgz
     version: v0.0.1-BUILD.20220706192730
-generated: "2022-07-06T21:08:10.52632545Z"
+generated: "2022-07-13T16:11:31.748760745Z"
