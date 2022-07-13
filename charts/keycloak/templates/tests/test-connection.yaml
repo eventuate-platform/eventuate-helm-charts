@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "keycloak.fullname" . }}-test-connection"
+  labels:
+    {{- include "keycloak.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: curl
+      image: curlimages/curl:7.84.0
+      command: ['curl']
+      args: 
+        - -v
+        - --trace
+        - -X
+        - POST 
+        - -d 
+        - 'grant_type=password&username=foo&password=foopassword&client_id=service-template'
+        - http://{{ include "keycloak.fullname" . }}:{{ .Values.service.port }}/realms/service-template/protocol/openid-connect/token
+  restartPolicy: Never

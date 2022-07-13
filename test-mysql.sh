@@ -29,6 +29,18 @@ echo testing persistence
 
 sleep 10
 
+set count=1
+
+until $POD_EXEC "echo 'select * from foo;' | mysql -h$RN  -uroot -prootpassword -o eventuate -P 3306" ; do
+    count=$((count+1))
+    if [ "$count" = "10" ] ; then
+        break
+    fi
+    echo $count
+    sleep 5
+done
+
+
 $POD_EXEC "echo 'select * from foo;' | mysql -h$RN  -uroot -prootpassword -o eventuate -P 3306"
 
 echo
