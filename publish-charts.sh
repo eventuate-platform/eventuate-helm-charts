@@ -31,7 +31,7 @@ helm repo index .
 
 git add .
 
-if git --no-pager diff --quiet HEAD ; then
+if git --no-pager diff --quiet HEAD < /dev/null > /dev/null ; then
     echo no changes
 else
     git commit -am "Updated charts"
