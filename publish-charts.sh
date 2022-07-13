@@ -10,8 +10,6 @@ if [ ! -d helm-repository ] ; then
     git worktree add helm-repository helm-repository
 fi
 
-echo about to sed: charts/*/Chart.yaml
-
 
 if which gsed ; then
     SED=gsed
@@ -20,8 +18,6 @@ else
 fi
 
 $SED --in-place -e "s/^appVersion:.*$/appVersion: $VERSION/" -e "s/^version:.*$/version: $VERSION/" charts/*/Chart.yaml
-echo done sed
-git diff HEAD
 
 ls -d charts/* | xargs -n1 -I XYZ helm package XYZ -d helm-repository
 
