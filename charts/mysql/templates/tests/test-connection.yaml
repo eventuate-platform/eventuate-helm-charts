@@ -10,5 +10,23 @@ spec:
   containers:
     - name: mysql
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-      command: ["bin/sh", "-c", "echo select 1 | mysql -h{{ include "mysql.fullname" . }}  -uroot -prootpassword -o eventuate -P {{ .Values.service.port }}"]
+      env:
+        {{ if gt (len .Values.envSecretKeyRefs) 0 }}
+          {{- range .Values.envSecretKeyRefs }}
+          - name: {{ .env }}
+            valueFrom:
+              secretKeyRef:
+                name: {{ .name }}
+                key: {{ .key }}
+          {{- end }}
+        {{ else }}
+          - name: MYSQL_ROOT_PASSWORD
+            value: rootpassword
+          - name: MYSQL_USER
+            value: mysqluser
+          - name: MYSQL_PASSWORD
+            value: mysqlpw
+        {{ end }}    
+
+      command: ["bin/sh", "-c", "echo select 1 | mysql -h{{ include "mysql.fullname" . }}  -u$MYSQL_USER -p$MYSQL_PASSWORD -o eventuate -P {{ .Values.service.port }}"]
   restartPolicy: Never

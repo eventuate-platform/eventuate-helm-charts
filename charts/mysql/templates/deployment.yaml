@@ -62,12 +62,22 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
           env:
+          {{ if gt (len .Values.envSecretKeyRefs) 0 }}
+            {{- range .Values.envSecretKeyRefs }}
+            - name: {{ .env }}
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .name }}
+                  key: {{ .key }}
+            {{- end }}
+          {{ else }}
             - name: MYSQL_ROOT_PASSWORD
               value: rootpassword
             - name: MYSQL_USER
               value: mysqluser
             - name: MYSQL_PASSWORD
               value: mysqlpw
+          {{ end }}    
           volumeMounts:
             - name: {{ include "mysql.fullname" . }}-persistent-storage
               mountPath: /var/lib/mysql

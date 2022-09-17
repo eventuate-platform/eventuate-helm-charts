@@ -1,0 +1,7 @@
+envSecretKeyRefs:
+  - name: mysql-helm-test-db-secrets
+    key: username
+    env: MYSQL_USER
+  - name: mysql-helm-test-db-secrets
+    key: password
+    env: MYSQL_PASSWORD
