@@ -1,24 +1,20 @@
-version:               2
+version: 2.1
+setup: true
+orbs:
+  continuation: circleci/continuation@0.1.2
 jobs:
-  build:
-    machine:
-      image: ubuntu-2004:202101-01
+  setup:
+    executor: continuation/default
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "0a:2e:d8:65:0d:6f:70:5b:1e:a1:45:70:5f:8a:72:e6"
-      - checkout
-      - run: sudo ./install-k8s-tools.sh
-      - run: kind create cluster
-      - run: ./test-zookeeper.sh          
-      - run: ./test-mysql.sh                    
-      - run: ./test-mysql-config-map.sh               
-      - run: ./test-kafka.sh                              
-      - run: ./test-keycloak.sh         
-      - run:
-          name: publish
+      - checkout # checkout code
+      - run: # run a command
+          name: Generate config
           command: |
-            VERSION=$(./determine-version.sh)
-            echo $VERSION
-            ./publish-charts.sh $VERSION
-                     
+            ./.circleci/generate-config.sh > generated_config.yml
+      - continuation/continue:
+          configuration_path: generated_config.yml
+
+workflows:
+  setup:
+    jobs:
+      - setup
