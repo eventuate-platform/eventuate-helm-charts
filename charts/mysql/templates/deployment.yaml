@@ -78,6 +78,7 @@ spec:
             - name: MYSQL_PASSWORD
               value: mysqlpw
           {{ end }}    
+{{- if .Values.persistentStorage }}          
           volumeMounts:
             - name: {{ include "mysql.fullname" . }}-persistent-storage
               mountPath: /var/lib/mysql
@@ -89,3 +90,4 @@ spec:
       resources:
         requests:
           storage: 1Gi
+{{- end }}

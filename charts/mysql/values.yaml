@@ -58,3 +58,5 @@ tolerations: []
 affinity: {}
 
 envSecretKeyRefs: []
+
+persistentStorage: true
