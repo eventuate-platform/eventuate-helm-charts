@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: eventuateio/eventuate-tram-sagas-mysql
   pullPolicy: IfNotPresent
-  tag: "0.19.0.RELEASE"
+  tag: "0.20.0.RELEASE"
 
 imagePullSecrets: []
 nameOverride: ""

@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: eventuateio/eventuate-kafka
   pullPolicy: IfNotPresent
-  tag: "0.15.0.RELEASE"
+  tag: "0.16.0.RELEASE"
 
 imagePullSecrets: []
 nameOverride: ""
