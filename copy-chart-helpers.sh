@@ -9,7 +9,7 @@ update_chart_with_dependency() {
     dependency_version=$(sed -e '/^version:/!d' -e 's/^version: *//' < charts/$dependency/Chart.yaml)
     echo $dependency_version
     cp -r charts/$chart $tmp_chart
-    sed -e "s/    version:.*/    version: $dependency_version/" -e "s?repository:.*?repository: \"file://$(PWD)/charts/$dependency\"?" \
+    sed -e "s/    version:.*/    version: $dependency_version/" -e "s?repository:.*?repository: \"file://$(pwd)/charts/$dependency\"?" \
     < $tmp_chart/Chart.yaml > $tmp_chart/Chart.yaml.new
     mv $tmp_chart/Chart.yaml.new $tmp_chart/Chart.yaml
 }
