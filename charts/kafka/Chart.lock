@@ -1,0 +1,6 @@
+dependencies:
+- name: zookeeper
+  repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
+  version: v0.1.0
+digest: sha256:adc64d1e010af6511ccb5213364d0cb6f916677acfe1134046fc2dd8a03eefc5
+generated: "2022-10-20T16:24:55.641536-07:00"

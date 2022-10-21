@@ -14,8 +14,23 @@ spec:
       args:
         - "-c"
         - | 
+          set -e
+          
           ID=-$(date +%Y%m%d%H%M%S)
-          echo "create /foo$ID" | ./bin/zkCli.sh -server zookeeper:2181 && \
-          echo "set /foo$ID bar" | ./bin/zkCli.sh -server zookeeper:2181 && \
-          echo "get /foo$ID" | ./bin/zkCli.sh -server zookeeper:2181
+          ZK={{ include "zookeeper.fullname" . }}
+          
+          wait_for_it() {
+            for run in {1..10}; do
+              if echo ruok | nc -v $ZK 2181 ; then
+                break
+              fi
+              sleep 1
+            done            
+          }
+          
+          wait_for_it
+
+          echo "create /foo$ID" | ./bin/zkCli.sh -server $ZK:2181
+          # echo "set /foo$ID bar" | ./bin/zkCli.sh -server $ZK:2181
+          # echo "get /foo$ID" | ./bin/zkCli.sh -server $ZK:2181
   restartPolicy: Never

@@ -11,22 +11,32 @@ spec:
     - name: mysql
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
       env:
-        {{ if gt (len .Values.envSecretKeyRefs) 0 }}
-          {{- range .Values.envSecretKeyRefs }}
-          - name: {{ .env }}
+        {{ if .Values.createDefaultCredentialsSecret }}
+          - name: MYSQL_ROOT_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: {{ .name }}
-                key: {{ .key }}
-          {{- end }}
-        {{ else }}
-          - name: MYSQL_ROOT_PASSWORD
-            value: rootpassword
+                name: {{ include "mysql.fullname" . }}-database-credentials
+                key: rootPassword
           - name: MYSQL_USER
-            value: mysqluser
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "mysql.fullname" . }}-database-credentials
+                key: mysqlUser
           - name: MYSQL_PASSWORD
-            value: mysqlpw
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "mysql.fullname" . }}-database-credentials
+                key: mysqlPassword
+        {{ end }}    
+        {{ if gt (len .Values.envSecretKeyRefs) 0 }}
+          {{- range .Values.envSecretKeyRefs }}
+          - name: {{ .name }}
+            valueFrom:
+              secretKeyRef:
+                name: {{ .secret.name }}
+                key: {{ .secret.key }}
+          {{- end }}
         {{ end }}    
 
-      command: ["bin/sh", "-c", "echo select 1 | mysql -h{{ include "mysql.fullname" . }}  -u$MYSQL_USER -p$MYSQL_PASSWORD -o eventuate -P {{ .Values.service.port }}"]
+      command: ["bin/sh", "-c", "echo select 1 | mysql -h{{ include "mysql.fullname" . }}  -u$MYSQL_USER -p$MYSQL_PASSWORD -P {{ .Values.service.port }}"]
   restartPolicy: Never

@@ -13,8 +13,11 @@ MESSAGE=/foomessage$ID
 
 echo installing
 
-helm install --wait $ZKN charts/zookeeper
-helm install --wait $RN charts/${NAME}  --set zookeeper.hostname=$ZKN
+. ./copy-chart-helpers.sh
+
+update_chart_with_dependency ${NAME} zookeeper
+
+helm install --dependency-update --wait $RN $tmp_chart
 
 echo helm test
 
@@ -33,5 +36,4 @@ echo consuming
 $POD_EXEC "bin/kafka-console-consumer.sh   --topic foofoo   --bootstrap-server $RN:9092  --max-messages 1  --from-beginning --timeout-ms 10000" | grep $MESSAGE
 
 helm uninstall $RN
-helm uninstall $ZKN
 

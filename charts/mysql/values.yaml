@@ -5,9 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: eventuateio/eventuate-tram-sagas-mysql
+#  repository: eventuateio/eventuate-tram-sagas-mysql
+#  pullPolicy: IfNotPresent
+#  tag: "0.20.0.RELEASE"
+  repository: mysql/mysql-server
   pullPolicy: IfNotPresent
-  tag: "0.20.0.RELEASE"
+  tag: "8.0.27-1.2.6-server"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -57,6 +60,23 @@ tolerations: []
 
 affinity: {}
 
+
+# Secrets for the environment
 envSecretKeyRefs: []
 
+#envSecretKeyRefs:
+#  - name: envVar
+#    secret:
+#        name: secretName
+#        key: keyFromSecret
+# For testing: create a Secret containing test credentials
+
+# Use a persistent volume
+
 persistentStorage: true
+
+createDefaultCredentialsSecret: true
+
+# The name of MySQL database to create (MYSQL_DATABASE)
+
+# mysqlDatabase: databaseName

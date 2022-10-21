@@ -79,6 +79,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-zookeeper:
-  hostname: zookeeper

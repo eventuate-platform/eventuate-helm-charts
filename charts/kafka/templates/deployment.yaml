@@ -74,7 +74,7 @@ spec:
             - name: KAFKA_INTER_BROKER_LISTENER_NAME
               value: LX
             - name: KAFKA_ZOOKEEPER_CONNECT
-              value: {{ .Values.zookeeper.hostname }}:2181
+              value: {{ include "kafka.fullname" . }}-zookeeper:2181
             - name: KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR
               value: "1"
             - name: KAFKA_HEAP_OPTS

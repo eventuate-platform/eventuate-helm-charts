@@ -68,11 +68,59 @@ spec:
               value: zookeeper:2181
             - name: JAVA_OPTS
               value: "-Xmx64m"
+
+
+          {{- range $dbIndex, $databaseServer := .Values.cdc.databaseServers }}
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_TYPE
+              value: mysql-binlog
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_DATASOURCEURL
+              value: jdbc:mysql://{{ .host }}:3306/{{ index $databaseServer.databases 0}} # what is the right value here
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_DATASOURCEDRIVERCLASSNAME
+              value: com.mysql.jdbc.Driver
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_LEADERSHIPLOCKPATH
+              value: /eventuate/cdc/leader/{{ include "eventuate-cdc.fullname" $ }}/{{ $dbIndex }}
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_READOLDDEBEZIUMDBOFFSETSTORAGETOPIC
+              value: "false"
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_MYSQLBINLOGCLIENTUNIQUEID
+              value: "{{ $dbIndex }}"
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_OFFSETSTOREKEY
+              value: MySqlBinlog{{ $dbIndex }}
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_OFFSETSTORAGETOPICNAME
+              value: db.history.common
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_OUTBOXID
+              value: "{{ $dbIndex }}"            
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_DATASOURCEUSERNAME
+              {{- with .credentials.username }}
+                {{- toYaml . | nindent 14 }}
+              {{- end }}
+              
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_DATASOURCEPASSWORD
+              {{- with .credentials.password }}
+                {{- toYaml . | nindent 14 }}
+              {{- end }}
+
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_CDCDBUSERNAME
+              {{- with .credentials.username }}
+                {{- toYaml . | nindent 14 }}
+              {{- end }}
+
+            - name: EVENTUATE_CDC_READER_R{{ $dbIndex }}_CDCDBPASSWORD
+              {{- with .credentials.password }}
+                {{- toYaml . | nindent 14 }}
+              {{- end }}
+
+          {{- range $databaseIndex, $database := .databases }}
+            - name: EVENTUATE_CDC_PIPELINE_PIPELINE8_TYPE
+              value: eventuate-tram
+            - name: EVENTUATE_CDC_PIPELINE_PIPELINE8_READER
+              value: R{{ $dbIndex }}
+            - name: EVENTUATE_CDC_PIPELINE_PIPELINE8_EVENTUATEDATABASESCHEMA
+              value: {{ $database }}
+          {{- end }}
+  
+          {{- end }}
           envFrom:
-          {{ if .Values.cdc.defaultEnabled }}
-          - configMapRef:
-              name: {{ include "eventuate-cdc.fullname" . }}-pipeline-config
-          {{ end }}
+
           {{- range .Values.cdc.envFroms }}
           - configMapRef:
               name: {{ . }}

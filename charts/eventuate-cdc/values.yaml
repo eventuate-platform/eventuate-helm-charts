@@ -82,5 +82,20 @@ tolerations: []
 affinity: {}
 
 cdc:
-  defaultEnabled: true
   envFroms: []
+  # This is very cookie cutter for MySQL
+  # Slightly different for Crossplane
+  databaseServers:
+    - mysql:
+      host: test-mysql
+      credentials:
+        username:
+          value: root
+        password:
+          valueFrom:
+            secretKeyRef:
+              name: test-mysql-database-credentials
+              key: rootPassword
+      # Perhaps just one
+      databases: 
+        - eventuate
