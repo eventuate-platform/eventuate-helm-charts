@@ -1,5 +1,5 @@
 
-tmp_dir=$(mktemp -d -t helm-temp)
+tmp_dir=$(mktemp -d)
 echo tmp_dir $tmp_dir
 tmp_chart=$tmp_dir/tmp-chart
 

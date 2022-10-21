@@ -13,7 +13,7 @@ else
     SED=sed
 fi
 
-tmp_dir=$(mktemp -d -t helm-temp)
+tmp_dir=$(mktemp -d)
 tmp_charts=$tmp_dir/charts
 
 echo tmp_charts= $tmp_charts
