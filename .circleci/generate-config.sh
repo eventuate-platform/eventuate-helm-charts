@@ -10,6 +10,10 @@ orbs:
           script:
             description: the script to execute
             type: string
+          create_cluster:
+            description: whether to create cluster
+            type: boolean
+            default: true
         machine:
           image: ubuntu-2004:202101-01
         steps:
@@ -18,7 +22,10 @@ orbs:
                 - "0a:2e:d8:65:0d:6f:70:5b:1e:a1:45:70:5f:8a:72:e6"
           - checkout
           - run: sudo ./install-k8s-tools.sh
-          - run: kind create cluster
+          - run: |
+              if [ "<<parameters.create_cluster>>" = "true" ]; then
+                kind create cluster
+              fi
           - run: <<parameters.script>>     
 workflows:
   version: 2.1
@@ -38,6 +45,7 @@ cat >> generated_config.yml <<END
       - test-chart/test-chart:
           name: publish
           script: ./.circleci/circleci-publish-charts.sh   
+          create_cluster: false
           requires:
 END
 
