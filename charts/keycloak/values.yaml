@@ -81,5 +81,5 @@ tolerations: []
 affinity: {}
 
 mysql:
-  host: mysql
-  
+  mysqlDatabase: keycloak
+
