@@ -1,0 +1,73 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "initialize-cdc-schema.fullname" . }}
+spec:
+  template:
+    spec:
+      initContainers:
+      - name: create-flyway-config
+        image: mysql/mysql-server:8.0.27-1.2.6-server
+        command: ["bash"]
+        args:
+          - "-c"
+          - |
+            echo > /flyway/conf/flyway.conf "
+            flyway.url=jdbc:mysql://$MYSQL_HOST/$MYSQL_DATABASE?allowPublicKeyRetrieval=true
+            flyway.user=$MYSQL_USER_NAME
+            flyway.password=$MYSQL_PASSWORD
+            flyway.baselineOnMigrate=true
+            # It was skipping V1
+            flyway.baselineVersion=0.0
+            "
+            cat /flyway/conf/flyway.conf
+        env:
+          - name: MYSQL_HOST
+            value: {{ .Values.dbHost }}
+          - name: MYSQL_DATABASE
+            value: {{ .Values.mysqlDatabase }}
+          - name: MYSQL_USER_NAME
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.dbCredentialsConfigMap }}
+                key: mysqlUser
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.dbCredentialsConfigMap }}
+                key: mysqlPassword
+        volumeMounts:
+          - name: flyway-conf
+            mountPath: "/flyway/conf"
+      containers:
+          - name: flyway
+            image: flyway/flyway:9.0.4-alpine
+            args:
+              - "migrate"
+            volumeMounts:
+              - name: flyway-conf
+                mountPath: "/flyway/conf"
+                readOnly: true
+              - name: flyway-sql
+                mountPath: "/flyway/sql"
+                readOnly: true
+      volumes:
+        - name: flyway-conf
+          emptyDir: {}
+        - name: flyway-sql
+          configMap:
+            name: {{ include "initialize-cdc-schema.fullname" . }}-flyway-sql
+      restartPolicy: OnFailure
+  backoffLimit: 4
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "initialize-cdc-schema.fullname" . }}-flyway-sql
+data:
+  V1__eventuate_database.sql: |
+      create table cdc_monitoring (
+        reader_id VARCHAR(255) PRIMARY KEY,
+        last_time BIGINT
+      );

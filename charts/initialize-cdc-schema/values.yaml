@@ -1,14 +1,14 @@
-# Default values for eventuate-cdc.
+# Default values for initialize-cdc-schema.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: eventuateio/eventuate-cdc-service
+  repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.14.0.RELEASE"
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
@@ -80,25 +80,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-cdc:
-  zookeeper: zookeeper
-  kafka: kafka
-
-  envFroms: []
-  # This is very cookie cutter for MySQL
-  # Slightly different for Crossplane
-  databaseServers:
-    - mysql:
-      host: test-mysql
-      credentials:
-        username:
-          value: root
-        password:
-          valueFrom:
-            secretKeyRef:
-              name: test-mysql-database-credentials
-              key: rootPassword
-      # Perhaps just one
-      databases: 
-        - eventuate
