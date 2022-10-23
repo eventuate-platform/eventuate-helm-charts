@@ -110,11 +110,11 @@ spec:
               {{- end }}
 
           {{- range $databaseIndex, $database := .databases }}
-            - name: EVENTUATE_CDC_PIPELINE_PIPELINE8_TYPE
+            - name: EVENTUATE_CDC_PIPELINE_PIPELINER{{ $dbIndex }}P{{ $databaseIndex }}_TYPE
               value: eventuate-tram
-            - name: EVENTUATE_CDC_PIPELINE_PIPELINE8_READER
+            - name: EVENTUATE_CDC_PIPELINE_PIPELINER{{ $dbIndex }}P{{ $databaseIndex }}_READER
               value: R{{ $dbIndex }}
-            - name: EVENTUATE_CDC_PIPELINE_PIPELINE8_EVENTUATEDATABASESCHEMA
+            - name: EVENTUATE_CDC_PIPELINE_PIPELINER{{ $dbIndex }}P{{ $databaseIndex }}_EVENTUATEDATABASESCHEMA
               value: {{ $database }}
           {{- end }}
   
