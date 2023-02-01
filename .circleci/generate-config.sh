@@ -38,6 +38,11 @@ cat >> generated_config.yml <<END
       - test-chart/test-chart:
           name: $build_script
           script: ./$build_script
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
 END
 done
 
@@ -46,6 +51,11 @@ cat >> generated_config.yml <<END
           name: publish
           script: ./.circleci/circleci-publish-charts.sh   
           create_cluster: false
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
           requires:
 END
 
