@@ -1,5 +1,10 @@
 #! /bin/bash -e
 
+if [ -n "$CIRCLE_TAG" ] ; then
+    echo $CIRCLE_TAG
+    exit 0
+fi
+    
 CHART_VERSION=$(sed  -e '/^version:/!d' -e 's/.*: //' <  $(ls charts/*/Chart.yaml | head -1))
 
 BUILD_DATE=$(date -u +'%Y%m%d%H%M%S')
