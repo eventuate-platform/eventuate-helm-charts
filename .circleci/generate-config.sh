@@ -41,8 +41,6 @@ cat >> generated_config.yml <<END
           filters:
             tags:
               only: /^v.*/
-            branches:
-              only: /.*/
 END
 done
 
@@ -54,8 +52,6 @@ cat >> generated_config.yml <<END
           filters:
             tags:
               only: /^v.*/
-            branches:
-              only: /.*/
           requires:
 END
 
