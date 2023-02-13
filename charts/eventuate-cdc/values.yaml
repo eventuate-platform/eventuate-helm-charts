@@ -81,15 +81,16 @@ tolerations: []
 
 affinity: {}
 
+# Configures the CDC to read from messages transaction outboxes (https://microservices.io/patterns/data/transactional-outbox.html) on one or more MySQL database servers and publish them to Apache Kafka
 cdc:
   zookeeper: zookeeper
   kafka: kafka
-
+  # additional configuration options
   envFroms: []
-  # This is very cookie cutter for MySQL
-  # Slightly different for Crossplane
+  # The database servers that have outbox tables
   databaseServers:
     - mysql:
+      # the Kubernates Service
       host: test-mysql
       credentials:
         username:
@@ -99,6 +100,6 @@ cdc:
             secretKeyRef:
               name: test-mysql-database-credentials
               key: rootPassword
-      # Perhaps just one
+      # The databases on the server that contain a transaction outbox, i.e. MESSAGE table
       databases: 
         - eventuate
