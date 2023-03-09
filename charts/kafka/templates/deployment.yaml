@@ -68,7 +68,7 @@ spec:
             - name: KAFKA_LISTENERS
               value: "LX://:9092"
             - name: KAFKA_ADVERTISED_LISTENERS
-              value: LX://{{ include "kafka.fullname" . }}:9092
+              value: LX://{{ include "kafka.fullname" . }}.{{ .Release.Namespace }}:9092
             - name: KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
               value: LX:PLAINTEXT
             - name: KAFKA_INTER_BROKER_LISTENER_NAME
