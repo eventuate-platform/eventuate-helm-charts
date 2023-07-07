@@ -10,7 +10,7 @@ POD_EXEC_I="kubectl exec -i $POD -- bash -c "
 
 KN=kafka$ID
 MYSQL_C=mysql-customer-service$ID
-MYSQL_O=mysql-order-service$ID
+POSTGRES_O=postgres-order-service$ID
 CDC=cdc$ID
 
 
@@ -21,19 +21,20 @@ helm upgrade --install $MYSQL_C ./charts/mysql \
 
 helm upgrade --install $MYSQL_C-init-db charts/initialize-cdc-schema \
     --set dbHost=$MYSQL_C \
-    --set mysqlDatabase=customer_service \
+    --set dbDatabase=customer_service \
     --set dbCredentialsConfigMap=${MYSQL_C}-database-credentials \
     --wait --wait-for-jobs 
 
-helm upgrade --install $MYSQL_O ./charts/mysql \
-    --set mysqlDatabase=order_service \
+helm upgrade --install $POSTGRES_O ./charts/postgres \
+    --set postgresDatabase=order_service \
     --set persistentStorage=false \
     --wait
 
-helm upgrade --install $MYSQL_O-init-db charts/initialize-cdc-schema \
-    --set dbHost=$MYSQL_O \
-    --set mysqlDatabase=order_service \
-    --set dbCredentialsConfigMap=${MYSQL_O}-database-credentials  \
+helm upgrade --install $POSTGRES_O-init-db charts/initialize-cdc-schema \
+    --set dbType=postgres \
+    --set dbHost=$POSTGRES_O \
+    --set dbDatabase=order_service \
+    --set dbCredentialsConfigMap=${POSTGRES_O}-database-credentials  \
     --wait --wait-for-jobs 
 
 . ./copy-chart-helpers.sh
@@ -53,6 +54,7 @@ cdc:
   kafka: $KN
   databaseServers:
     - customer-service-mysql:
+      readerType: mysql-binlog
       host: ${MYSQL_C}
       credentials:
         username:
@@ -65,15 +67,19 @@ cdc:
       databases: 
         - customer_service
     - order-service-mysql:
-      host: ${MYSQL_O}
+      readerType: postgres-wal
+      host: ${POSTGRES_O}
       credentials:
         username:
-          value: root
+          valueFrom:
+            secretKeyRef:
+              name: ${POSTGRES_O}-database-credentials
+              key: postgresUser
         password:
           valueFrom:
             secretKeyRef:
-              name: ${MYSQL_O}-database-credentials
-              key: rootPassword
+              name: ${POSTGRES_O}-database-credentials
+              key: postgresPassword
       databases: 
         - order_service
 END
@@ -81,3 +87,8 @@ END
 helm upgrade --install eventuate-cdc charts/eventuate-cdc \
     --wait --values $temp_values
 
+echo
+echo
+echo SUCCESS
+echo
+echo

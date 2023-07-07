@@ -7,35 +7,54 @@ spec:
     spec:
       initContainers:
       - name: create-flyway-config
-        image: mysql/mysql-server:8.0.27-1.2.6-server
-        command: ["bash"]
+        image: alpine:3.18.2
+        command: ["sh"]
         args:
           - "-c"
           - |
             echo > /flyway/conf/flyway.conf "
-            flyway.url=jdbc:mysql://$MYSQL_HOST/$MYSQL_DATABASE?allowPublicKeyRetrieval=true
-            flyway.user=$MYSQL_USER_NAME
-            flyway.password=$MYSQL_PASSWORD
+{{ if eq .Values.dbType "mysql"}}            
+            flyway.url=jdbc:mysql://$DB_HOST/$DB_DATABASE?allowPublicKeyRetrieval=true
+{{ else if eq .Values.dbType "postgres" }}            
+            flyway.url=jdbc:postgresql://$DB_HOST/$DB_DATABASE
+{{ end }}
+            flyway.user=$DB_USER_NAME
+            flyway.password=$DB_PASSWORD
             flyway.baselineOnMigrate=true
             # It was skipping V1
             flyway.baselineVersion=0.0
             "
             cat /flyway/conf/flyway.conf
         env:
-          - name: MYSQL_HOST
+          - name: DB_HOST
             value: {{ .Values.dbHost }}
-          - name: MYSQL_DATABASE
-            value: {{ .Values.mysqlDatabase }}
-          - name: MYSQL_USER_NAME
+          - name: DB_DATABASE
+            value: {{ .Values.dbDatabase }}
+
+{{ if eq .Values.dbType "mysql"}}            
+          - name: DB_USER_NAME
             valueFrom:
               secretKeyRef:
                 name: {{ .Values.dbCredentialsConfigMap }}
                 key: mysqlUser
-          - name: MYSQL_PASSWORD
+          - name: DB_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: {{ .Values.dbCredentialsConfigMap }}
                 key: mysqlPassword
+{{ else if eq .Values.dbType "postgres" }}            
+          - name: DB_USER_NAME
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.dbCredentialsConfigMap }}
+                key: postgresUser
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.dbCredentialsConfigMap }}
+                key: postgresPassword
+{{ end }}
+
         volumeMounts:
           - name: flyway-conf
             mountPath: "/flyway/conf"
@@ -71,3 +90,8 @@ data:
         reader_id VARCHAR(255) PRIMARY KEY,
         last_time BIGINT
       );
+{{ if eq .Values.dbType "postgres" }}            
+  V2__eventuate_slot.sql: |
+      SELECT * FROM pg_create_logical_replication_slot('eventuate_slot', 'wal2json');
+{{ end }}
+
