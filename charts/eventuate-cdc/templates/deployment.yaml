@@ -141,8 +141,18 @@ spec:
               value: eventuate-tram
             - name: EVENTUATE_CDC_PIPELINE_PIPELINER{{ $dbIndex }}P{{ $databaseIndex }}_READER
               value: R{{ $dbIndex }}
+
+            {{ if eq ($databaseServer.readerType | default "mysql-binlog") "mysql-binlog" }}
+
             - name: EVENTUATE_CDC_PIPELINE_PIPELINER{{ $dbIndex }}P{{ $databaseIndex }}_EVENTUATEDATABASESCHEMA
               value: {{ $database }}
+
+            {{ else if eq $databaseServer.readerType "postgres-wal" }}
+
+            - name: EVENTUATE_CDC_PIPELINE_PIPELINER{{ $dbIndex }}P{{ $databaseIndex }}_EVENTUATEDATABASESCHEMA
+              value: public
+            {{ end }}
+
           {{- end }}
   
           {{- end }}
