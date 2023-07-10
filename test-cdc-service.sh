@@ -74,12 +74,12 @@ cdc:
           valueFrom:
             secretKeyRef:
               name: ${POSTGRES_O}-database-credentials
-              key: postgresUser
+              key: user
         password:
           valueFrom:
             secretKeyRef:
               name: ${POSTGRES_O}-database-credentials
-              key: postgresPassword
+              key: password
       databases: 
         - order_service
 END

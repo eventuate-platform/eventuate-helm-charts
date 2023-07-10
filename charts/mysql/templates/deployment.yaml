@@ -72,12 +72,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ include "mysql.fullname" . }}-database-credentials
-                  key: mysqlUser
+                  key: user
             - name: MYSQL_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ include "mysql.fullname" . }}-database-credentials
-                  key: mysqlPassword
+                  key: password
           {{ end }}    
           {{ if gt (len .Values.envSecretKeyRefs) 0 }}
             {{- range .Values.envSecretKeyRefs }}

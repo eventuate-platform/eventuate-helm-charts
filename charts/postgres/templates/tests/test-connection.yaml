@@ -16,12 +16,12 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: {{ include "postgres.fullname" . }}-database-credentials
-                key: postgresUser
+                key: user
           - name: PGPASSWORD
             valueFrom:
               secretKeyRef:
                 name: {{ include "postgres.fullname" . }}-database-credentials
-                key: postgresPassword
+                key: password
           - name: POSTGRES_DB
         {{ if .Values.postgresDatabase }}
             value:  {{ .Values.postgresDatabase }}

@@ -67,12 +67,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ include "postgres.fullname" . }}-database-credentials
-                  key: postgresUser
+                  key: user
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ include "postgres.fullname" . }}-database-credentials
-                  key: postgresPassword
+                  key: password
           {{ end }}    
           {{ if gt (len .Values.envSecretKeyRefs) 0 }}
             {{- range .Values.envSecretKeyRefs }}

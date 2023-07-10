@@ -36,23 +36,23 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: {{ .Values.dbCredentialsConfigMap }}
-                key: mysqlUser
+                key: user
           - name: DB_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: {{ .Values.dbCredentialsConfigMap }}
-                key: mysqlPassword
+                key: password
 {{ else if eq .Values.dbType "postgres" }}            
           - name: DB_USER_NAME
             valueFrom:
               secretKeyRef:
                 name: {{ .Values.dbCredentialsConfigMap }}
-                key: postgresUser
+                key: user
           - name: DB_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: {{ .Values.dbCredentialsConfigMap }}
-                key: postgresPassword
+                key: password
 {{ end }}
 
         volumeMounts:
