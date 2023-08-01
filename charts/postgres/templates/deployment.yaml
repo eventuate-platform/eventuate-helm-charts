@@ -88,7 +88,9 @@ spec:
               value:  {{ .Values.postgresDatabase }}
           {{ else }}
               value:  {{ include "postgres.fullname" . | replace "-" "_" }}
-          {{ end }}    
+          {{ end }}
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
           volumeMounts:
 {{- if .Values.persistentStorage }}          
             - name: {{ include "postgres.fullname" . }}-persistent-storage
