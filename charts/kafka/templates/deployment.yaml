@@ -79,9 +79,11 @@ spec:
               value: "1"
             - name: KAFKA_HEAP_OPTS
               value: "-Xmx192m"
+            - name: KAFKA_LOG_DIRS
+              value: /data/kafka/logs
           volumeMounts:
             - name: {{ include "kafka.fullname" . }}-persistent-storage
-              mountPath: /tmp/kafka-logs
+              mountPath: /data/kafka
   volumeClaimTemplates:
   - metadata:
       name: {{ include "kafka.fullname" . }}-persistent-storage
