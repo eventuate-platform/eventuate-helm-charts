@@ -11,3 +11,5 @@ curl https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz | tar xfz -
 cp linux-amd64/helm /usr/local/bin/helm
 chmod +x /usr/local/bin/helm
 
+wget https://github.com/mikefarah/yq/releases/download/v4.35.1/yq_linux_amd64 -O /usr/bin/yq &&\
+    chmod +x /usr/bin/yq
