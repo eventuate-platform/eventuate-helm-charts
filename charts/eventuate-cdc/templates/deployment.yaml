@@ -63,9 +63,19 @@ spec:
       {{- end }}
           env:
             - name: EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS
-              value: {{ .Values.cdc.kafka }}:9092
+              {{- if .Values.cdc.kafkaBootstrapBrokers }}
+              value: {{ .Values.cdc.kafkaBootstrapBrokers }}
+              {{- else }}
+              value: {{ default "kafka" .Values.cdc.kafka }}:9092
+              {{- end }}
+
             - name: EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING
-              value: {{ .Values.cdc.zookeeper }}:2181
+              {{- if .Values.cdc.zookeeperConnectString }}
+              value: {{ .Values.cdc.zookeeperConnectString }}
+              {{- else }}
+              value: {{ default "zookeeper" .Values.cdc.zookeeper }}:2181
+              {{- end }}
+              
             - name: JAVA_OPTS
               value: "-Xmx64m"
 

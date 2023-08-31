@@ -13,6 +13,7 @@ MYSQL_C=mysql-customer-service$ID
 POSTGRES_O=postgres-order-service$ID
 CDC=cdc$ID
 
+./_test-cdc-service-unit.sh
 
 helm upgrade --install $MYSQL_C ./charts/mysql \
     --set mysqlDatabase=customer_service \

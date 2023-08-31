@@ -81,10 +81,15 @@ tolerations: []
 
 affinity: {}
 
-# Configures the CDC to read from messages transaction outboxes (https://microservices.io/patterns/data/transactional-outbox.html) on one or more MySQL database servers and publish them to Apache Kafka
+# Configures the CDC to read from transaction outboxes (https://microservices.io/patterns/data/transactional-outbox.html) on one or more MySQL database servers and publish them to Apache Kafka
+
 cdc:
-  zookeeper: zookeeper
-  kafka: kafka
+  # Single host name, appends :2181
+  # zookeeper: zookeeper
+  # zookeeperConnectString: zookeeper-a:2181,zookeeper-b:2181,zookeeper-c:2181
+  # Single host name, appends :9092
+  # kafka: kafka
+  # kafkaBootstrapBrokers: kafka-a:9092,kafka-b:9092,kafka-c:9092
   # additional configuration options
   envFroms: []
   # The database servers that have outbox tables
