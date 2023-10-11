@@ -75,7 +75,7 @@ cdc:
           valueFrom:
             secretKeyRef:
               name: ${POSTGRES_O}-database-credentials
-              key: user
+              key: username
         password:
           valueFrom:
             secretKeyRef:

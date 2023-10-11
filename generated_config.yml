@@ -1,0 +1,94 @@
+version: 2.1
+orbs:
+  test-chart:
+    jobs:
+      test-chart:
+        parameters:
+          script:
+            description: the script to execute
+            type: string
+          create_cluster:
+            description: whether to create cluster
+            type: boolean
+            default: true
+        machine:
+          image: ubuntu-2004:202101-01
+        steps:
+          - add_ssh_keys:
+              fingerprints:
+                - "0a:2e:d8:65:0d:6f:70:5b:1e:a1:45:70:5f:8a:72:e6"
+          - checkout
+          - run: sudo ./install-k8s-tools.sh
+          - run: |
+              if [ "<<parameters.create_cluster>>" = "true" ]; then
+                kind create cluster
+              fi
+          - run: <<parameters.script>>     
+workflows:
+  version: 2.1
+  build-test-and-deploy:
+    jobs:
+      - test-chart/test-chart:
+          name: test-cdc-service.sh
+          script: ./test-cdc-service.sh
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
+      - test-chart/test-chart:
+          name: test-kafka.sh
+          script: ./test-kafka.sh
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
+      - test-chart/test-chart:
+          name: test-keycloak.sh
+          script: ./test-keycloak.sh
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
+      - test-chart/test-chart:
+          name: test-mysql.sh
+          script: ./test-mysql.sh
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
+      - test-chart/test-chart:
+          name: test-zipkin.sh
+          script: ./test-zipkin.sh
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
+      - test-chart/test-chart:
+          name: test-zookeeper.sh
+          script: ./test-zookeeper.sh
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
+      - test-chart/test-chart:
+          name: publish
+          script: ./.circleci/circleci-publish-charts.sh   
+          create_cluster: false
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: /.*/
+          requires:
+            - test-cdc-service.sh
+            - test-kafka.sh
+            - test-keycloak.sh
+            - test-mysql.sh
+            - test-zipkin.sh
+            - test-zookeeper.sh
