@@ -21,7 +21,7 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: {{ include "mysql.fullname" . }}-database-credentials
-                key: user
+                key: username
           - name: MYSQL_PASSWORD
             valueFrom:
               secretKeyRef:

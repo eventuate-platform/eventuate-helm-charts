@@ -67,7 +67,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ include "postgres.fullname" . }}-database-credentials
-                  key: user
+                  key: username
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
