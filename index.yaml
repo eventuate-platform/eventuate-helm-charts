@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   authorization-server:
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.725792429Z"
+    description: A Helm chart for Kubernetes
+    digest: 9aae5737d897c10ac35dfce5e9af0bab436c50c4337f9197817eb356cb05b45f
+    name: authorization-server
+    type: application
+    urls:
+    - authorization-server-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.658574003Z"
+    created: "2023-10-23T17:25:33.725452323Z"
     description: A Helm chart for Kubernetes
     digest: a5540ab4876ee590ce0acd8a33a06b8de357e584b4b726f9c4a464166e9f0d5d
     name: authorization-server
@@ -13,7 +23,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.658187091Z"
+    created: "2023-10-23T17:25:33.725087908Z"
     description: A Helm chart for Kubernetes
     digest: 06602bb07603425eedb8f38e3fdbeb635b757f9e02b9de34e22e6d92444b5780
     name: authorization-server
@@ -24,7 +34,7 @@ entries:
   eventuate-cdc:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.674744151Z"
+    created: "2023-10-23T17:25:33.742256751Z"
     description: A Helm chart for Kubernetes
     digest: 1d1fc35916ad9fe9fadd3d80424d3154eaa2e5631d45bda938a5c839f1f4a51a
     name: eventuate-cdc
@@ -34,7 +44,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2023-10-23T16:12:32.674383266Z"
+    created: "2023-10-23T17:25:33.741885201Z"
     description: A Helm chart for Kubernetes
     digest: 97fc5573b34360230c68f3262afc0566b66bb9faf80afbcfd6b87bf15f11541e
     name: eventuate-cdc
@@ -44,7 +54,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-10-23T16:12:32.674007023Z"
+    created: "2023-10-23T17:25:33.741531002Z"
     description: A Helm chart for Kubernetes
     digest: ee3102d51e7b532f35616d65670076adc51d5f97a5b9c5f1173b446ebb9474de
     name: eventuate-cdc
@@ -54,7 +64,7 @@ entries:
     version: v0.3.4
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-10-23T16:12:32.673650599Z"
+    created: "2023-10-23T17:25:33.741186021Z"
     description: A Helm chart for Kubernetes
     digest: d560e047e895b3032b8ac015107dbf48c9e7aa3573558f3f2762c3d2e52bc091
     name: eventuate-cdc
@@ -64,7 +74,7 @@ entries:
     version: v0.3.3
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-10-23T16:12:32.67331012Z"
+    created: "2023-10-23T17:25:33.74082888Z"
     description: A Helm chart for Kubernetes
     digest: c2523bc34bda1adeee50331fc35e0e4efe45908eff08c6332f7976e58a84e37d
     name: eventuate-cdc
@@ -73,8 +83,18 @@ entries:
     - eventuate-cdc-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.72697911Z"
+    description: A Helm chart for Kubernetes
+    digest: 4fad940b4b087d0ae30333a3fa0676e52a9db446aeb229f48409881466eba457
+    name: eventuate-cdc
+    type: application
+    urls:
+    - eventuate-cdc-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.659341043Z"
+    created: "2023-10-23T17:25:33.726593921Z"
     description: A Helm chart for Kubernetes
     digest: 80e17866ba41af9431faef5e7f939088bb6e7753bc6d90d816edee47755632fb
     name: eventuate-cdc
@@ -84,7 +104,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.658963048Z"
+    created: "2023-10-23T17:25:33.726200644Z"
     description: A Helm chart for Kubernetes
     digest: 6745028a4ad5d5fe0b9e0e57f23d5810e64cd2e4c52e105572ce2c6fd89162ea
     name: eventuate-cdc
@@ -94,7 +114,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.673003148Z"
+    created: "2023-10-23T17:25:33.740490213Z"
     description: A Helm chart for Kubernetes
     digest: fb7d091d8282b868b77df06cc237747a08dfbe58ad80a9c4da5cf4e8e854238a
     name: eventuate-cdc
@@ -104,7 +124,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.672641254Z"
+    created: "2023-10-23T17:25:33.740094987Z"
     description: A Helm chart for Kubernetes
     digest: ed421d40c94d22b7d9f1402a11fc3fcbc208ad6c2a263bd486fc0054b817dfc9
     name: eventuate-cdc
@@ -114,7 +134,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.672274785Z"
+    created: "2023-10-23T17:25:33.739327176Z"
     description: A Helm chart for Kubernetes
     digest: cfad39c1dc32ef7d352a46aa9a3666913e1df752ebff61a3d44d3ec09cb86d36
     name: eventuate-cdc
@@ -124,7 +144,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.671910526Z"
+    created: "2023-10-23T17:25:33.738311823Z"
     description: A Helm chart for Kubernetes
     digest: a383a50df287badb5f351411da34305261df1ca3646168a5528b75fa9e6390de
     name: eventuate-cdc
@@ -134,7 +154,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.671522524Z"
+    created: "2023-10-23T17:25:33.737948389Z"
     description: A Helm chart for Kubernetes
     digest: 6c807bcbf340cf7fb7033a969671eeb7dc27ff30ba413f952fa203d5a651e220
     name: eventuate-cdc
@@ -144,7 +164,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.671108608Z"
+    created: "2023-10-23T17:25:33.737584179Z"
     description: A Helm chart for Kubernetes
     digest: 1ea4a552d9e2a981070d9089fa4fc895d32de0f0f1acee36b29017dd698d77b7
     name: eventuate-cdc
@@ -154,7 +174,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.670522716Z"
+    created: "2023-10-23T17:25:33.737211358Z"
     description: A Helm chart for Kubernetes
     digest: f6630e29367cb6cc7b9af15362d0e0c05eb5f1ed4597ad61aed80565e4967cd4
     name: eventuate-cdc
@@ -164,7 +184,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.669265996Z"
+    created: "2023-10-23T17:25:33.736842795Z"
     description: A Helm chart for Kubernetes
     digest: 237423ebffcff15185620305683c60b66563a83e159c9704eb595767b7e962f7
     name: eventuate-cdc
@@ -174,7 +194,7 @@ entries:
     version: v0.1.0-BUILD.20230621095230
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230309222954
-    created: "2023-10-23T16:12:32.668876831Z"
+    created: "2023-10-23T17:25:33.736460647Z"
     description: A Helm chart for Kubernetes
     digest: 7682405acf12c8a4ff89f79368152d3f78f5ec496b8a015ccd5dc5bf1def2b61
     name: eventuate-cdc
@@ -184,7 +204,7 @@ entries:
     version: v0.1.0-BUILD.20230309222954
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230307180532
-    created: "2023-10-23T16:12:32.668501813Z"
+    created: "2023-10-23T17:25:33.736057202Z"
     description: A Helm chart for Kubernetes
     digest: 792ad205b82e3ff14f046c5136183b8aef7ba7da652a0fdd812c24d991d98127
     name: eventuate-cdc
@@ -194,7 +214,7 @@ entries:
     version: v0.1.0-BUILD.20230307180532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230213071046
-    created: "2023-10-23T16:12:32.668123206Z"
+    created: "2023-10-23T17:25:33.735703949Z"
     description: A Helm chart for Kubernetes
     digest: c4855fecf1728434329cae27645943113d86c1887d7e283199c9a8a7bbb85d74
     name: eventuate-cdc
@@ -204,7 +224,7 @@ entries:
     version: v0.1.0-BUILD.20230213071046
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201210532
-    created: "2023-10-23T16:12:32.667758688Z"
+    created: "2023-10-23T17:25:33.735346756Z"
     description: A Helm chart for Kubernetes
     digest: 209a08b0fe6de21abf9116cf64ff22258a987db54ff0b1a33595900f2862d070
     name: eventuate-cdc
@@ -214,7 +234,7 @@ entries:
     version: v0.1.0-BUILD.20230201210532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201204551
-    created: "2023-10-23T16:12:32.667406765Z"
+    created: "2023-10-23T17:25:33.734995745Z"
     description: A Helm chart for Kubernetes
     digest: 13a0c0f4564d0c528ef81fc45341ab970849879a94d905888aa1a3b6f1b2e1ab
     name: eventuate-cdc
@@ -224,7 +244,7 @@ entries:
     version: v0.1.0-BUILD.20230201204551
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194310
-    created: "2023-10-23T16:12:32.667034044Z"
+    created: "2023-10-23T17:25:33.734650016Z"
     description: A Helm chart for Kubernetes
     digest: 71b5d55974a400dd111c880656f0714230079fa152d3dea4949a1cf3bdd05193
     name: eventuate-cdc
@@ -234,7 +254,7 @@ entries:
     version: v0.1.0-BUILD.20230201194310
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194228
-    created: "2023-10-23T16:12:32.666676402Z"
+    created: "2023-10-23T17:25:33.734298937Z"
     description: A Helm chart for Kubernetes
     digest: e670245f055b20e81973752be49f4a8c8a419258144e7da4f846682c9578702e
     name: eventuate-cdc
@@ -244,7 +264,7 @@ entries:
     version: v0.1.0-BUILD.20230201194228
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194057
-    created: "2023-10-23T16:12:32.666329816Z"
+    created: "2023-10-23T17:25:33.733933754Z"
     description: A Helm chart for Kubernetes
     digest: 6a2a591bc71fa6647a2159514e499c9f444fc2b7e2f591ee227350701dc32f0e
     name: eventuate-cdc
@@ -254,7 +274,7 @@ entries:
     version: v0.1.0-BUILD.20230201194057
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201193127
-    created: "2023-10-23T16:12:32.665965749Z"
+    created: "2023-10-23T17:25:33.733560009Z"
     description: A Helm chart for Kubernetes
     digest: 1d558765d1726395388e27bc9778f591c7881df6017b4eb4d2142127491f9427
     name: eventuate-cdc
@@ -264,7 +284,7 @@ entries:
     version: v0.1.0-BUILD.20230201193127
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201191338
-    created: "2023-10-23T16:12:32.665610864Z"
+    created: "2023-10-23T17:25:33.733187762Z"
     description: A Helm chart for Kubernetes
     digest: b5cb602aae084a7a64f61b8da7ad1952d7a81024200f1c117ce5c96d39e67e33
     name: eventuate-cdc
@@ -274,7 +294,7 @@ entries:
     version: v0.1.0-BUILD.20230201191338
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023051447
-    created: "2023-10-23T16:12:32.66526197Z"
+    created: "2023-10-23T17:25:33.732804254Z"
     description: A Helm chart for Kubernetes
     digest: dadb9ff0050247cdd38325e689821e5d907b6e027b31a632cb811022bf262426
     name: eventuate-cdc
@@ -284,7 +304,7 @@ entries:
     version: v0.1.0-BUILD.20221023051447
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023000628
-    created: "2023-10-23T16:12:32.664907914Z"
+    created: "2023-10-23T17:25:33.732395776Z"
     description: A Helm chart for Kubernetes
     digest: 48f3634d93a7a6025d0ced668086a054630241fe82ad98f5fb804893ff4d433b
     name: eventuate-cdc
@@ -294,7 +314,7 @@ entries:
     version: v0.1.0-BUILD.20221023000628
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022163111
-    created: "2023-10-23T16:12:32.664552892Z"
+    created: "2023-10-23T17:25:33.731725563Z"
     description: A Helm chart for Kubernetes
     digest: 3e08f3d367daedcbab2c361f385d04501789bc2d255487aecbe922ee14daa89f
     name: eventuate-cdc
@@ -304,7 +324,7 @@ entries:
     version: v0.1.0-BUILD.20221022163111
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022162025
-    created: "2023-10-23T16:12:32.664172588Z"
+    created: "2023-10-23T17:25:33.73069298Z"
     description: A Helm chart for Kubernetes
     digest: 3d2affda5e7cf5bb8e80c9c5b86ea64586a95f0fa0bcfa50b70651638298b458
     name: eventuate-cdc
@@ -314,7 +334,7 @@ entries:
     version: v0.1.0-BUILD.20221022162025
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221021174914
-    created: "2023-10-23T16:12:32.663794735Z"
+    created: "2023-10-23T17:25:33.730312323Z"
     description: A Helm chart for Kubernetes
     digest: b6e422e8929ec4d6ef4f6829e627e465c3f6ef1262f1656bc30ea1f59ef42875
     name: eventuate-cdc
@@ -324,7 +344,7 @@ entries:
     version: v0.1.0-BUILD.20221021174914
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221018174433
-    created: "2023-10-23T16:12:32.663227514Z"
+    created: "2023-10-23T17:25:33.729935643Z"
     description: A Helm chart for Kubernetes
     digest: 17a1cfc6d45a1e317403269d2425b5ccf3f91c3ac56bc7ce02df0e1fcfa774b4
     name: eventuate-cdc
@@ -334,7 +354,7 @@ entries:
     version: v0.0.1-BUILD.20221018174433
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017205743
-    created: "2023-10-23T16:12:32.662290477Z"
+    created: "2023-10-23T17:25:33.729596137Z"
     description: A Helm chart for Kubernetes
     digest: 130462735cd686f935d63c41f3506255d51ebcd5a3b4526edcb841d9becdeef1
     name: eventuate-cdc
@@ -344,7 +364,7 @@ entries:
     version: v0.0.1-BUILD.20221017205743
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017203143
-    created: "2023-10-23T16:12:32.661657549Z"
+    created: "2023-10-23T17:25:33.729273027Z"
     description: A Helm chart for Kubernetes
     digest: 7a4f79d6d04c81088365c1522a32fc3ce0e6b578f4d38b77d4261a04c3d57d7e
     name: eventuate-cdc
@@ -354,7 +374,7 @@ entries:
     version: v0.0.1-BUILD.20221017203143
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220917193207
-    created: "2023-10-23T16:12:32.661315384Z"
+    created: "2023-10-23T17:25:33.728954692Z"
     description: A Helm chart for Kubernetes
     digest: a9ee4718e4c54e4b8bda173e8f8a6fd98ca3411e621eb95036e21df61c37c9ae
     name: eventuate-cdc
@@ -364,7 +384,7 @@ entries:
     version: v0.0.1-BUILD.20220917193207
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713185623
-    created: "2023-10-23T16:12:32.660992281Z"
+    created: "2023-10-23T17:25:33.728616114Z"
     description: A Helm chart for Kubernetes
     digest: 66589f5f11acbd18565bb5a7d3bfb67fd34c26566cf6c6127f843c8cae92ff3c
     name: eventuate-cdc
@@ -374,7 +394,7 @@ entries:
     version: v0.0.1-BUILD.20220713185623
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713161131
-    created: "2023-10-23T16:12:32.660664329Z"
+    created: "2023-10-23T17:25:33.728286659Z"
     description: A Helm chart for Kubernetes
     digest: 130914a7b63c825eb962f5703f2cf5041f2e50f76b0f352b3f47441fa35857ec
     name: eventuate-cdc
@@ -384,7 +404,7 @@ entries:
     version: v0.0.1-BUILD.20220713161131
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2023-10-23T16:12:32.660324889Z"
+    created: "2023-10-23T17:25:33.727942643Z"
     description: A Helm chart for Kubernetes
     digest: e6e10a3c67d7dee907732c6b7515c702ac2df3ba1889a91a70ada5147b28f95f
     name: eventuate-cdc
@@ -394,7 +414,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2023-10-23T16:12:32.660006024Z"
+    created: "2023-10-23T17:25:33.72763272Z"
     description: A Helm chart for Kubernetes
     digest: 4f20b84530a47fd8bf9e84222c0a13470d5ba9f897865fd4c9424ddad8e8eb38
     name: eventuate-cdc
@@ -404,7 +424,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2023-10-23T16:12:32.659681176Z"
+    created: "2023-10-23T17:25:33.727312839Z"
     description: A Helm chart for Kubernetes
     digest: 9786339fadf39a225cef860035617a6eb3e076abee63485c3e3f01828aef9e0b
     name: eventuate-cdc
@@ -415,7 +435,7 @@ entries:
   initialize-cdc-schema:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.681882547Z"
+    created: "2023-10-23T17:25:33.749814012Z"
     description: A Helm chart for Kubernetes
     digest: 3ee7d850d7f4c63d7393a7b5e80ccfd44001700ca1f20bff20fac01b7c8051c5
     name: initialize-cdc-schema
@@ -425,7 +445,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2023-10-23T16:12:32.681627008Z"
+    created: "2023-10-23T17:25:33.749561528Z"
     description: A Helm chart for Kubernetes
     digest: 5299c38d7ae60151b74e5b79bba16fbd9da2b3bcaf1ad0857c4439f315927687
     name: initialize-cdc-schema
@@ -435,7 +455,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-10-23T16:12:32.681385391Z"
+    created: "2023-10-23T17:25:33.749326231Z"
     description: A Helm chart for Kubernetes
     digest: a527f313bceaad88c537f82fa31cba5baa1265a5afa66b7c3b85e43cf31af9a8
     name: initialize-cdc-schema
@@ -445,7 +465,7 @@ entries:
     version: v0.3.4
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-10-23T16:12:32.681153085Z"
+    created: "2023-10-23T17:25:33.749085562Z"
     description: A Helm chart for Kubernetes
     digest: 2d751c2cf6376b38f122a54806a0eec2e406d15fa21f15fe6eebde41d94a80a7
     name: initialize-cdc-schema
@@ -454,8 +474,18 @@ entries:
     - initialize-cdc-schema-v0.3.3.tgz
     version: v0.3.3
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.743014889Z"
+    description: A Helm chart for Kubernetes
+    digest: 7dfd83a58a9daa4cef9c885c5c8c22b9a13a882ecdc16567991e6646fd08b1d0
+    name: initialize-cdc-schema
+    type: application
+    urls:
+    - initialize-cdc-schema-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.675250481Z"
+    created: "2023-10-23T17:25:33.742757924Z"
     description: A Helm chart for Kubernetes
     digest: d3eb1fc6624a67ec2fe9ff96cc7feaca4732bb2a2b52e51007be50325c7ac11f
     name: initialize-cdc-schema
@@ -465,7 +495,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.674999987Z"
+    created: "2023-10-23T17:25:33.74250775Z"
     description: A Helm chart for Kubernetes
     digest: b6938a049e454e4beea54cae6b3873f4c910bb2d45be22504f2897358a63825f
     name: initialize-cdc-schema
@@ -475,7 +505,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.680921029Z"
+    created: "2023-10-23T17:25:33.748847522Z"
     description: A Helm chart for Kubernetes
     digest: 5547d04ae23495d5643fc96bd97224681b92a8e597ef52b0448cf2515d047ea1
     name: initialize-cdc-schema
@@ -485,7 +515,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.680680172Z"
+    created: "2023-10-23T17:25:33.748595927Z"
     description: A Helm chart for Kubernetes
     digest: 48d67595578c200d2726f3032e1f7dc79a2b1c8163f7186ab9b2a203a3a8f954
     name: initialize-cdc-schema
@@ -495,7 +525,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.680442862Z"
+    created: "2023-10-23T17:25:33.748352903Z"
     description: A Helm chart for Kubernetes
     digest: 90357c1d8dd8ade8d989d8f7fd5487888987a64f105b615db5b73e822a8a706e
     name: initialize-cdc-schema
@@ -505,7 +535,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.680203605Z"
+    created: "2023-10-23T17:25:33.748099711Z"
     description: A Helm chart for Kubernetes
     digest: d975858b993ce0dc09b87bc59cd598f2cced1f1d308ec7aab99734ddc265ac64
     name: initialize-cdc-schema
@@ -515,7 +545,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.679961818Z"
+    created: "2023-10-23T17:25:33.74782936Z"
     description: A Helm chart for Kubernetes
     digest: ee573857d9fdaee18d1a0b497bf41c7f21fe634fa78503e0f6f9277188bbe314
     name: initialize-cdc-schema
@@ -525,7 +555,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.679717358Z"
+    created: "2023-10-23T17:25:33.74757354Z"
     description: A Helm chart for Kubernetes
     digest: a6c6cd020c40f9c4d8f18fa8bcdd8943564b4d9ab8b538a951ce4eba56af3667
     name: initialize-cdc-schema
@@ -535,7 +565,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.679476701Z"
+    created: "2023-10-23T17:25:33.74730741Z"
     description: A Helm chart for Kubernetes
     digest: cc628d04dfa37f1c124912f6747b566d32ee91e1e63c6e54260533fd1e27144a
     name: initialize-cdc-schema
@@ -545,7 +575,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.679227287Z"
+    created: "2023-10-23T17:25:33.747028249Z"
     description: A Helm chart for Kubernetes
     digest: 94921cca918fc6ee9fefccc7d8b7cbc9c1682075dccc74d850df371148818fd9
     name: initialize-cdc-schema
@@ -555,7 +585,7 @@ entries:
     version: v0.1.0-BUILD.20230621095230
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230309222954
-    created: "2023-10-23T16:12:32.678987583Z"
+    created: "2023-10-23T17:25:33.74667961Z"
     description: A Helm chart for Kubernetes
     digest: c7f3d6a332e76b75d706a01d7b0e38a90600d1be3a15f8841a2b23bff3ef96ff
     name: initialize-cdc-schema
@@ -565,7 +595,7 @@ entries:
     version: v0.1.0-BUILD.20230309222954
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230307180532
-    created: "2023-10-23T16:12:32.678745403Z"
+    created: "2023-10-23T17:25:33.745999506Z"
     description: A Helm chart for Kubernetes
     digest: c7547bd11708f2c6d32f75c7d028e36a2dca1cd59d845d10992e5df482091436
     name: initialize-cdc-schema
@@ -575,7 +605,7 @@ entries:
     version: v0.1.0-BUILD.20230307180532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230213071046
-    created: "2023-10-23T16:12:32.678501644Z"
+    created: "2023-10-23T17:25:33.745238573Z"
     description: A Helm chart for Kubernetes
     digest: 790b4cb86c440d239ebeedec7b33a24b60c1f49bc34c7f9872451a2b2fb223c0
     name: initialize-cdc-schema
@@ -585,7 +615,7 @@ entries:
     version: v0.1.0-BUILD.20230213071046
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201210532
-    created: "2023-10-23T16:12:32.678227559Z"
+    created: "2023-10-23T17:25:33.74496913Z"
     description: A Helm chart for Kubernetes
     digest: 26f32c9261cc32e62f3effb088dff3a94b0f982316fb03c8a523a348029dd3a1
     name: initialize-cdc-schema
@@ -595,7 +625,7 @@ entries:
     version: v0.1.0-BUILD.20230201210532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201204551
-    created: "2023-10-23T16:12:32.67790578Z"
+    created: "2023-10-23T17:25:33.744713423Z"
     description: A Helm chart for Kubernetes
     digest: ecbc4af349e105210f8e57429a2cb6289ca5c52a68cad178c7dece8d96b09996
     name: initialize-cdc-schema
@@ -605,7 +635,7 @@ entries:
     version: v0.1.0-BUILD.20230201204551
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194310
-    created: "2023-10-23T16:12:32.677209024Z"
+    created: "2023-10-23T17:25:33.744475616Z"
     description: A Helm chart for Kubernetes
     digest: e8505a9452252b88d7009eaf2667e27d48b6683488101873c29005ec5910bc48
     name: initialize-cdc-schema
@@ -615,7 +645,7 @@ entries:
     version: v0.1.0-BUILD.20230201194310
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194228
-    created: "2023-10-23T16:12:32.676471743Z"
+    created: "2023-10-23T17:25:33.744236433Z"
     description: A Helm chart for Kubernetes
     digest: 9e049b880ff8b19db906b9062efba1762f146eee693e4f71a85580f6f05f3afb
     name: initialize-cdc-schema
@@ -625,7 +655,7 @@ entries:
     version: v0.1.0-BUILD.20230201194228
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194057
-    created: "2023-10-23T16:12:32.676231389Z"
+    created: "2023-10-23T17:25:33.74397005Z"
     description: A Helm chart for Kubernetes
     digest: 6c4b1b540554d657674b34bc2da2d96cdf8ecacd4e3d21b503262d8fe9b98765
     name: initialize-cdc-schema
@@ -635,7 +665,7 @@ entries:
     version: v0.1.0-BUILD.20230201194057
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201193127
-    created: "2023-10-23T16:12:32.675990769Z"
+    created: "2023-10-23T17:25:33.743733501Z"
     description: A Helm chart for Kubernetes
     digest: 2a9eaf6d00efe5d0cd08275f6dff25eb867af097208c6e69cd8e8b375c2f2a01
     name: initialize-cdc-schema
@@ -645,7 +675,7 @@ entries:
     version: v0.1.0-BUILD.20230201193127
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201191338
-    created: "2023-10-23T16:12:32.675752732Z"
+    created: "2023-10-23T17:25:33.743499849Z"
     description: A Helm chart for Kubernetes
     digest: e2ead80f75dd3047d06f9bc74aa260ef3633e8a9f6c31b457d248727aa9be50f
     name: initialize-cdc-schema
@@ -655,7 +685,7 @@ entries:
     version: v0.1.0-BUILD.20230201191338
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023051447
-    created: "2023-10-23T16:12:32.675514581Z"
+    created: "2023-10-23T17:25:33.743263392Z"
     description: A Helm chart for Kubernetes
     digest: 725b86bfb862a0fc1d6d0704971d3d9515fddcc27249ccc43b2e4ee226010fb5
     name: initialize-cdc-schema
@@ -666,7 +696,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.704291397Z"
+    created: "2023-10-23T17:25:33.772541044Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -680,7 +710,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2023-10-23T16:12:32.703761674Z"
+    created: "2023-10-23T17:25:33.771911148Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -694,7 +724,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-10-23T16:12:32.703190198Z"
+    created: "2023-10-23T17:25:33.771368347Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -708,7 +738,7 @@ entries:
     version: v0.3.4
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-10-23T16:12:32.702659663Z"
+    created: "2023-10-23T17:25:33.770845672Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -722,7 +752,7 @@ entries:
     version: v0.3.3
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-10-23T16:12:32.702108075Z"
+    created: "2023-10-23T17:25:33.770315727Z"
     description: A Helm chart for Kubernetes
     digest: 13bed89decf251f916f8f513c048d559337b41af419d061dc81ccbea370f35da
     name: kafka
@@ -731,8 +761,22 @@ entries:
     - kafka-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.751501351Z"
+    dependencies:
+    - name: zookeeper
+      repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
+      version: 0.1.0-BUILD.20231023172533
+    description: A Helm chart for Kubernetes
+    digest: 577e884b7231bdd070abfeee0f283a4a8f8ceea49efcdf0728c85eff219278f2
+    name: kafka
+    type: application
+    urls:
+    - kafka-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.683063371Z"
+    created: "2023-10-23T17:25:33.750951516Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -746,7 +790,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.682508268Z"
+    created: "2023-10-23T17:25:33.750403095Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -760,7 +804,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.70177799Z"
+    created: "2023-10-23T17:25:33.77000011Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -774,7 +818,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.701185421Z"
+    created: "2023-10-23T17:25:33.769417996Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -788,7 +832,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.700591256Z"
+    created: "2023-10-23T17:25:33.768799105Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -802,7 +846,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.699098266Z"
+    created: "2023-10-23T17:25:33.767384943Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -816,7 +860,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.698550334Z"
+    created: "2023-10-23T17:25:33.766572805Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -830,7 +874,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.697980464Z"
+    created: "2023-10-23T17:25:33.766040048Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -844,7 +888,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.697418022Z"
+    created: "2023-10-23T17:25:33.765512788Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -858,7 +902,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.696897888Z"
+    created: "2023-10-23T17:25:33.7649816Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -872,7 +916,7 @@ entries:
     version: v0.1.0-BUILD.20230621095230
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230309222954
-    created: "2023-10-23T16:12:32.696359019Z"
+    created: "2023-10-23T17:25:33.764425768Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -886,7 +930,7 @@ entries:
     version: v0.1.0-BUILD.20230309222954
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230307180532
-    created: "2023-10-23T16:12:32.695817352Z"
+    created: "2023-10-23T17:25:33.763854339Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -900,7 +944,7 @@ entries:
     version: v0.1.0-BUILD.20230307180532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230213071046
-    created: "2023-10-23T16:12:32.695278089Z"
+    created: "2023-10-23T17:25:33.763325301Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -914,7 +958,7 @@ entries:
     version: v0.1.0-BUILD.20230213071046
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201210532
-    created: "2023-10-23T16:12:32.694741188Z"
+    created: "2023-10-23T17:25:33.762790854Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -928,7 +972,7 @@ entries:
     version: v0.1.0-BUILD.20230201210532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201204551
-    created: "2023-10-23T16:12:32.694168219Z"
+    created: "2023-10-23T17:25:33.762200269Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -942,7 +986,7 @@ entries:
     version: v0.1.0-BUILD.20230201204551
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194310
-    created: "2023-10-23T16:12:32.693556111Z"
+    created: "2023-10-23T17:25:33.761637343Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -956,7 +1000,7 @@ entries:
     version: v0.1.0-BUILD.20230201194310
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194228
-    created: "2023-10-23T16:12:32.692893961Z"
+    created: "2023-10-23T17:25:33.76106011Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -970,7 +1014,7 @@ entries:
     version: v0.1.0-BUILD.20230201194228
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194057
-    created: "2023-10-23T16:12:32.691339853Z"
+    created: "2023-10-23T17:25:33.759872324Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -984,7 +1028,7 @@ entries:
     version: v0.1.0-BUILD.20230201194057
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201193127
-    created: "2023-10-23T16:12:32.690791926Z"
+    created: "2023-10-23T17:25:33.759043749Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -998,7 +1042,7 @@ entries:
     version: v0.1.0-BUILD.20230201193127
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201191338
-    created: "2023-10-23T16:12:32.690246486Z"
+    created: "2023-10-23T17:25:33.758480618Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1012,7 +1056,7 @@ entries:
     version: v0.1.0-BUILD.20230201191338
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023051447
-    created: "2023-10-23T16:12:32.6896694Z"
+    created: "2023-10-23T17:25:33.757944405Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1026,7 +1070,7 @@ entries:
     version: v0.1.0-BUILD.20221023051447
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023000628
-    created: "2023-10-23T16:12:32.689142186Z"
+    created: "2023-10-23T17:25:33.757397671Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1040,7 +1084,7 @@ entries:
     version: v0.1.0-BUILD.20221023000628
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022163111
-    created: "2023-10-23T16:12:32.688607321Z"
+    created: "2023-10-23T17:25:33.756853787Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1054,7 +1098,7 @@ entries:
     version: v0.1.0-BUILD.20221022163111
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022162025
-    created: "2023-10-23T16:12:32.68807843Z"
+    created: "2023-10-23T17:25:33.756286661Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1068,7 +1112,7 @@ entries:
     version: v0.1.0-BUILD.20221022162025
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221021174914
-    created: "2023-10-23T16:12:32.687545763Z"
+    created: "2023-10-23T17:25:33.75572573Z"
     dependencies:
     - name: zookeeper
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1082,7 +1126,7 @@ entries:
     version: v0.1.0-BUILD.20221021174914
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221018174433
-    created: "2023-10-23T16:12:32.686993226Z"
+    created: "2023-10-23T17:25:33.75518207Z"
     description: A Helm chart for Kubernetes
     digest: a470f62758d212bd8a4a6bbd585ae6066b0ec04fa423835190f22594787c6e80
     name: kafka
@@ -1092,7 +1136,7 @@ entries:
     version: v0.0.1-BUILD.20221018174433
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017205743
-    created: "2023-10-23T16:12:32.686692495Z"
+    created: "2023-10-23T17:25:33.754888786Z"
     description: A Helm chart for Kubernetes
     digest: d090ffb94c415256d0b730d151b7aefbf1f16a66d02be86f7562ebf928504154
     name: kafka
@@ -1102,7 +1146,7 @@ entries:
     version: v0.0.1-BUILD.20221017205743
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017203143
-    created: "2023-10-23T16:12:32.686385658Z"
+    created: "2023-10-23T17:25:33.75458915Z"
     description: A Helm chart for Kubernetes
     digest: c5b606f6639cc582b97c9330cf293044d32418da1d7f71aaac905c30ae5eb019
     name: kafka
@@ -1112,7 +1156,7 @@ entries:
     version: v0.0.1-BUILD.20221017203143
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220917193207
-    created: "2023-10-23T16:12:32.68606313Z"
+    created: "2023-10-23T17:25:33.754267359Z"
     description: A Helm chart for Kubernetes
     digest: 37ab5441059416028f96b42dceff49820b6ab98df244de3707277199160629af
     name: kafka
@@ -1122,7 +1166,7 @@ entries:
     version: v0.0.1-BUILD.20220917193207
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713185623
-    created: "2023-10-23T16:12:32.685707041Z"
+    created: "2023-10-23T17:25:33.753957772Z"
     description: A Helm chart for Kubernetes
     digest: fe42987f1b90625dcb36b6af6803b41f1fea694e5a0ff41a2f90004f2ace5d3c
     name: kafka
@@ -1132,7 +1176,7 @@ entries:
     version: v0.0.1-BUILD.20220713185623
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713161131
-    created: "2023-10-23T16:12:32.685384931Z"
+    created: "2023-10-23T17:25:33.753619491Z"
     description: A Helm chart for Kubernetes
     digest: defbd1a718149da1f685361a826a30951be5a1b22f29e17493043391cf1c8e0f
     name: kafka
@@ -1142,7 +1186,7 @@ entries:
     version: v0.0.1-BUILD.20220713161131
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2023-10-23T16:12:32.684930204Z"
+    created: "2023-10-23T17:25:33.752848767Z"
     description: A Helm chart for Kubernetes
     digest: 67f20dfdcbf5940260914f41ab609892fc976cebb678f2a819faf85a0882dbcd
     name: kafka
@@ -1152,7 +1196,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2023-10-23T16:12:32.684369947Z"
+    created: "2023-10-23T17:25:33.752104353Z"
     description: A Helm chart for Kubernetes
     digest: f98a1fa6499bf1abf604f8a3ac57d03b52589e7125216277887da2be65bd6f2e
     name: kafka
@@ -1162,7 +1206,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2023-10-23T16:12:32.68336505Z"
+    created: "2023-10-23T17:25:33.751795406Z"
     description: A Helm chart for Kubernetes
     digest: 47c35a0644729d081141b20aeb27d9f648b708b88a383ace291f2ba80b568546
     name: kafka
@@ -1173,7 +1217,7 @@ entries:
   keycloak:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.737981481Z"
+    created: "2023-10-23T17:25:33.806574412Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1187,7 +1231,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2023-10-23T16:12:32.737124977Z"
+    created: "2023-10-23T17:25:33.805740154Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1201,7 +1245,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-10-23T16:12:32.736254888Z"
+    created: "2023-10-23T17:25:33.804854385Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1215,7 +1259,7 @@ entries:
     version: v0.3.4
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-10-23T16:12:32.734243574Z"
+    created: "2023-10-23T17:25:33.803202742Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1228,8 +1272,22 @@ entries:
     - keycloak-v0.3.3.tgz
     version: v0.3.3
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.776196168Z"
+    dependencies:
+    - name: mysql
+      repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
+      version: 0.1.0-BUILD.20231023172533
+    description: A Helm chart for Kubernetes
+    digest: ebb26180f8d95b99860fcb68580c7733fd74633a4371211f6f6516d21e50aced
+    name: keycloak
+    type: application
+    urls:
+    - keycloak-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.706115339Z"
+    created: "2023-10-23T17:25:33.774304971Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1243,7 +1301,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.705198988Z"
+    created: "2023-10-23T17:25:33.773440138Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1257,7 +1315,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.733365854Z"
+    created: "2023-10-23T17:25:33.802350735Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1271,7 +1329,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.732540254Z"
+    created: "2023-10-23T17:25:33.801491655Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1285,7 +1343,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.731702347Z"
+    created: "2023-10-23T17:25:33.800642116Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1299,7 +1357,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.730859939Z"
+    created: "2023-10-23T17:25:33.799784617Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1313,7 +1371,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.72998794Z"
+    created: "2023-10-23T17:25:33.798933444Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1327,7 +1385,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.729105028Z"
+    created: "2023-10-23T17:25:33.798082867Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1341,7 +1399,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.727307178Z"
+    created: "2023-10-23T17:25:33.796944928Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1355,7 +1413,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.726473066Z"
+    created: "2023-10-23T17:25:33.795478361Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1369,7 +1427,7 @@ entries:
     version: v0.1.0-BUILD.20230621095230
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230309222954
-    created: "2023-10-23T16:12:32.725570987Z"
+    created: "2023-10-23T17:25:33.794638848Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1383,7 +1441,7 @@ entries:
     version: v0.1.0-BUILD.20230309222954
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230307180532
-    created: "2023-10-23T16:12:32.724735625Z"
+    created: "2023-10-23T17:25:33.793796915Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1397,7 +1455,7 @@ entries:
     version: v0.1.0-BUILD.20230307180532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230213071046
-    created: "2023-10-23T16:12:32.723880058Z"
+    created: "2023-10-23T17:25:33.792968197Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1411,7 +1469,7 @@ entries:
     version: v0.1.0-BUILD.20230213071046
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201210532
-    created: "2023-10-23T16:12:32.723016886Z"
+    created: "2023-10-23T17:25:33.792097695Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1425,7 +1483,7 @@ entries:
     version: v0.1.0-BUILD.20230201210532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201204551
-    created: "2023-10-23T16:12:32.722148485Z"
+    created: "2023-10-23T17:25:33.791204184Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1439,7 +1497,7 @@ entries:
     version: v0.1.0-BUILD.20230201204551
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194310
-    created: "2023-10-23T16:12:32.720079105Z"
+    created: "2023-10-23T17:25:33.790323669Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1453,7 +1511,7 @@ entries:
     version: v0.1.0-BUILD.20230201194310
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194228
-    created: "2023-10-23T16:12:32.719237795Z"
+    created: "2023-10-23T17:25:33.788719846Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1467,7 +1525,7 @@ entries:
     version: v0.1.0-BUILD.20230201194228
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194057
-    created: "2023-10-23T16:12:32.718380374Z"
+    created: "2023-10-23T17:25:33.787656536Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1481,7 +1539,7 @@ entries:
     version: v0.1.0-BUILD.20230201194057
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201193127
-    created: "2023-10-23T16:12:32.71749498Z"
+    created: "2023-10-23T17:25:33.786812676Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1495,7 +1553,7 @@ entries:
     version: v0.1.0-BUILD.20230201193127
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201191338
-    created: "2023-10-23T16:12:32.716645167Z"
+    created: "2023-10-23T17:25:33.785965454Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1509,7 +1567,7 @@ entries:
     version: v0.1.0-BUILD.20230201191338
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023051447
-    created: "2023-10-23T16:12:32.715783047Z"
+    created: "2023-10-23T17:25:33.785090527Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1523,7 +1581,7 @@ entries:
     version: v0.1.0-BUILD.20221023051447
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023000628
-    created: "2023-10-23T16:12:32.714932445Z"
+    created: "2023-10-23T17:25:33.784223488Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1537,7 +1595,7 @@ entries:
     version: v0.1.0-BUILD.20221023000628
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022163111
-    created: "2023-10-23T16:12:32.713560997Z"
+    created: "2023-10-23T17:25:33.783307013Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1551,7 +1609,7 @@ entries:
     version: v0.1.0-BUILD.20221022163111
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022162025
-    created: "2023-10-23T16:12:32.712303859Z"
+    created: "2023-10-23T17:25:33.782169532Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1565,7 +1623,7 @@ entries:
     version: v0.1.0-BUILD.20221022162025
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221021174914
-    created: "2023-10-23T16:12:32.711399386Z"
+    created: "2023-10-23T17:25:33.780711599Z"
     dependencies:
     - name: mysql
       repository: https://raw.githubusercontent.com/eventuate-platform/eventuate-helm-charts/helm-repository
@@ -1579,7 +1637,7 @@ entries:
     version: v0.1.0-BUILD.20221021174914
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221018174433
-    created: "2023-10-23T16:12:32.71053297Z"
+    created: "2023-10-23T17:25:33.779811282Z"
     description: A Helm chart for Kubernetes
     digest: 6fd6ddddd371df607c24a0bea99f398fbcc402f2a3112d476f1ec27d1697cb69
     name: keycloak
@@ -1589,7 +1647,7 @@ entries:
     version: v0.0.1-BUILD.20221018174433
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017205743
-    created: "2023-10-23T16:12:32.709929561Z"
+    created: "2023-10-23T17:25:33.779232288Z"
     description: A Helm chart for Kubernetes
     digest: e65bea7befa561d47513f5d710e0d638f7e502496e44ec63d7cfecf10f2fcf7d
     name: keycloak
@@ -1599,7 +1657,7 @@ entries:
     version: v0.0.1-BUILD.20221017205743
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017203143
-    created: "2023-10-23T16:12:32.709341574Z"
+    created: "2023-10-23T17:25:33.778651368Z"
     description: A Helm chart for Kubernetes
     digest: 4aa2a78678ac738004bdb397d7cfd3d59116d59fb25651696e3c1e195a8269ed
     name: keycloak
@@ -1609,7 +1667,7 @@ entries:
     version: v0.0.1-BUILD.20221017203143
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220917193207
-    created: "2023-10-23T16:12:32.708774943Z"
+    created: "2023-10-23T17:25:33.778067314Z"
     description: A Helm chart for Kubernetes
     digest: bf5a0115c560b37860d5cfe75340b85ff8534c0fba7c01ca53c2aaa94cfd31b7
     name: keycloak
@@ -1619,7 +1677,7 @@ entries:
     version: v0.0.1-BUILD.20220917193207
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713185623
-    created: "2023-10-23T16:12:32.70818488Z"
+    created: "2023-10-23T17:25:33.777462624Z"
     description: A Helm chart for Kubernetes
     digest: b37910a773a6b9bce26efd0a055e62525adb58ef1242c96285be45b27040331f
     name: keycloak
@@ -1629,7 +1687,7 @@ entries:
     version: v0.0.1-BUILD.20220713185623
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713161131
-    created: "2023-10-23T16:12:32.707338931Z"
+    created: "2023-10-23T17:25:33.776854143Z"
     description: A Helm chart for Kubernetes
     digest: 35e7956c977f58137a592f2836e7d1f6d32923f04ec3c40be4ea348fe981e75f
     name: keycloak
@@ -1640,7 +1698,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.748972179Z"
+    created: "2023-10-23T17:25:33.816960354Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: e99170a0615b9095cb767c099e7ff53ca606d4f553f7e2debb8f8db231b1fa40
     name: mysql
@@ -1650,7 +1708,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2023-10-23T16:12:32.748415578Z"
+    created: "2023-10-23T17:25:33.816712789Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: c231d55e4d94d17a6aa85aca4fa5b0b6f057e7991fbc18eb8b15e1feec305713
     name: mysql
@@ -1660,7 +1718,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-10-23T16:12:32.747705827Z"
+    created: "2023-10-23T17:25:33.816460922Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: f77c91888aba9e1dc22929ed0c8963495cc9450760172e7107ea7861167f05c9
     name: mysql
@@ -1670,7 +1728,7 @@ entries:
     version: v0.3.4
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-10-23T16:12:32.747472175Z"
+    created: "2023-10-23T17:25:33.816228092Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 0ee3cb02921301851ac7351b752354755e314fc12c9b9e08ed4ee874dd4e6967
     name: mysql
@@ -1680,7 +1738,7 @@ entries:
     version: v0.3.3
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-10-23T16:12:32.747244556Z"
+    created: "2023-10-23T17:25:33.815972388Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: b3dfb8f4e858ab02b1285f09c3b172ea16161c81e3ab8ba8589ca93afba5f334
     name: mysql
@@ -1689,8 +1747,18 @@ entries:
     - mysql-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.807318814Z"
+    description: A Helm chart for deploying Eventuate MySQL image
+    digest: 178d9d8263263cc1dfe5c46d99096488615cc0db0c67e3e3684e19853e72d5c3
+    name: mysql
+    type: application
+    urls:
+    - mysql-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.738512409Z"
+    created: "2023-10-23T17:25:33.807078866Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 46f59bd8f1aaed7e1e691875f092aef335104cc3aed401620d7c1faf9ba10074
     name: mysql
@@ -1700,7 +1768,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.738262614Z"
+    created: "2023-10-23T17:25:33.806831394Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: ed46b54ec974e2c2b5047674b1debd4db9b348beb25a4ddf85d5af68d1969d7e
     name: mysql
@@ -1710,7 +1778,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.747047421Z"
+    created: "2023-10-23T17:25:33.815765795Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: c7d9cc59c84fce5d729af7432746def64e34305281c57e57bc149d3d8b419224
     name: mysql
@@ -1720,7 +1788,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.746812608Z"
+    created: "2023-10-23T17:25:33.815513302Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 24dea2af7645fa74b8f0383b6a7f6921ac77cf39e6d6f42781bd4a533620173f
     name: mysql
@@ -1730,7 +1798,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.746568219Z"
+    created: "2023-10-23T17:25:33.815283795Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 7c62135f1da5f095e719f5053eadb51f5a368f8083219d774f3beb6c9fe661e7
     name: mysql
@@ -1740,7 +1808,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.746336436Z"
+    created: "2023-10-23T17:25:33.815050529Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 2ab362dab1f04bae86becdabb45f9e59ac19d16d8130aa2e48238668d5600e66
     name: mysql
@@ -1750,7 +1818,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.746097709Z"
+    created: "2023-10-23T17:25:33.814819891Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 19a34d97f4c4a8c70872405ed0063ce99f7aaf71e4059d7c527b03f93bfd66d4
     name: mysql
@@ -1760,7 +1828,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.745826045Z"
+    created: "2023-10-23T17:25:33.814582334Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: a3f4e0d9f2106085cdf88e04aea7e95e94ecccdc575d9f2e47e9e4b48189705d
     name: mysql
@@ -1770,7 +1838,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.74558911Z"
+    created: "2023-10-23T17:25:33.814318768Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: a569fa6b5ef42a8eca7060458cf06858bfa3e5356d9ad09e13d556d0e2c4b97c
     name: mysql
@@ -1780,7 +1848,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.745348067Z"
+    created: "2023-10-23T17:25:33.81408771Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 64e3314978a833a535266b0104ce26d456e010839e0fae65d835d85320bb8a7f
     name: mysql
@@ -1790,7 +1858,7 @@ entries:
     version: v0.1.0-BUILD.20230621095230
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230309222954
-    created: "2023-10-23T16:12:32.745112822Z"
+    created: "2023-10-23T17:25:33.813854829Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 62097a75c70e56675105b4fe4d2c77ffc6dd8e2670d0d20de29c6bb82cb27429
     name: mysql
@@ -1800,7 +1868,7 @@ entries:
     version: v0.1.0-BUILD.20230309222954
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230307180532
-    created: "2023-10-23T16:12:32.744869927Z"
+    created: "2023-10-23T17:25:33.813617336Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 556c01f555b56da8317b1b950dd424699743c92c0f63117ad420f629c0b2cac0
     name: mysql
@@ -1810,7 +1878,7 @@ entries:
     version: v0.1.0-BUILD.20230307180532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230213071046
-    created: "2023-10-23T16:12:32.744632312Z"
+    created: "2023-10-23T17:25:33.813364305Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 571b2a5daf78fb7124ac11400761864c71f92fb96ce796470c98dbe7ffed44e2
     name: mysql
@@ -1820,7 +1888,7 @@ entries:
     version: v0.1.0-BUILD.20230213071046
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201210532
-    created: "2023-10-23T16:12:32.744387606Z"
+    created: "2023-10-23T17:25:33.813125454Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: de4dda019cb4b6e9ff1ec15fe632ab054e38fe06906d9508af19465bf07444d5
     name: mysql
@@ -1830,7 +1898,7 @@ entries:
     version: v0.1.0-BUILD.20230201210532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201204551
-    created: "2023-10-23T16:12:32.744152995Z"
+    created: "2023-10-23T17:25:33.812886661Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: b8b98851fa98fbba6167bb6823f4ad70bc56472db0b35edefc97c523cd8bf5b0
     name: mysql
@@ -1840,7 +1908,7 @@ entries:
     version: v0.1.0-BUILD.20230201204551
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194310
-    created: "2023-10-23T16:12:32.743913566Z"
+    created: "2023-10-23T17:25:33.812635998Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: ea3d358b0c804fa7fdda4efdbd58b89cbffe3ca26f9028f55765a5e88c60351a
     name: mysql
@@ -1850,7 +1918,7 @@ entries:
     version: v0.1.0-BUILD.20230201194310
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194228
-    created: "2023-10-23T16:12:32.743677161Z"
+    created: "2023-10-23T17:25:33.812392654Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 894bfb87f7011a9d0647a720cf123e31ec7a886c3a5699b04350ebb61c43c742
     name: mysql
@@ -1860,7 +1928,7 @@ entries:
     version: v0.1.0-BUILD.20230201194228
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194057
-    created: "2023-10-23T16:12:32.743430145Z"
+    created: "2023-10-23T17:25:33.812117003Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: d8f788041943b29acdcd2d1dd110f5f34f81cab1695608060f1dd1004e51f104
     name: mysql
@@ -1870,7 +1938,7 @@ entries:
     version: v0.1.0-BUILD.20230201194057
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201193127
-    created: "2023-10-23T16:12:32.743181469Z"
+    created: "2023-10-23T17:25:33.811842584Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: e9b7c0cd749d52e61caad0e8d47500a36903dfaad40b51f6d8dc0cd5859ae4ec
     name: mysql
@@ -1880,7 +1948,7 @@ entries:
     version: v0.1.0-BUILD.20230201193127
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201191338
-    created: "2023-10-23T16:12:32.742921857Z"
+    created: "2023-10-23T17:25:33.811572097Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 7a830b19398b4f64a4b5717e879e88b54d21a6365bacab6acc84df51ccc2689e
     name: mysql
@@ -1890,7 +1958,7 @@ entries:
     version: v0.1.0-BUILD.20230201191338
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023051447
-    created: "2023-10-23T16:12:32.742554571Z"
+    created: "2023-10-23T17:25:33.81110397Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 0e13ff60e30e45377b66447cc3ab29f7f027d14520c8f33b40d44b51a2f6c26b
     name: mysql
@@ -1900,7 +1968,7 @@ entries:
     version: v0.1.0-BUILD.20221023051447
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023000628
-    created: "2023-10-23T16:12:32.741884565Z"
+    created: "2023-10-23T17:25:33.810511908Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 63e2f1bd564677f0de8109225d3e2fd69584d3474ef2676ce45ceddd3737dbce
     name: mysql
@@ -1910,7 +1978,7 @@ entries:
     version: v0.1.0-BUILD.20221023000628
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022163111
-    created: "2023-10-23T16:12:32.741124294Z"
+    created: "2023-10-23T17:25:33.809950463Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: fe51d1bed822cd345a88b0caae6f020cf631925518c9364449bb45c403ded9ed
     name: mysql
@@ -1920,7 +1988,7 @@ entries:
     version: v0.1.0-BUILD.20221022163111
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022162025
-    created: "2023-10-23T16:12:32.740875782Z"
+    created: "2023-10-23T17:25:33.809698689Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: ebf3c4b6f29139c19afa4ada337633d6dc09d60a973b88dfee6444e6bce5f019
     name: mysql
@@ -1930,7 +1998,7 @@ entries:
     version: v0.1.0-BUILD.20221022162025
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221021174914
-    created: "2023-10-23T16:12:32.740634596Z"
+    created: "2023-10-23T17:25:33.809462151Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 622513c121a05e59ba55a3bad62ab68a1606a06e788d68bad22bf8253085034f
     name: mysql
@@ -1940,7 +2008,7 @@ entries:
     version: v0.1.0-BUILD.20221021174914
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221018174433
-    created: "2023-10-23T16:12:32.740396759Z"
+    created: "2023-10-23T17:25:33.809221003Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 476bc329433fc99179b6187bee803dce4c5c4a5323030b89a11528e5e6510729
     name: mysql
@@ -1950,7 +2018,7 @@ entries:
     version: v0.0.1-BUILD.20221018174433
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017205743
-    created: "2023-10-23T16:12:32.740187309Z"
+    created: "2023-10-23T17:25:33.809010941Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: bd21cce4a2632067129337b6aa64471421c8aa4ef7589d37d0fb83e42b36f7ed
     name: mysql
@@ -1960,7 +2028,7 @@ entries:
     version: v0.0.1-BUILD.20221017205743
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017203143
-    created: "2023-10-23T16:12:32.73997595Z"
+    created: "2023-10-23T17:25:33.808797403Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 4f8573dc8bae7edb7330dfedbbb484b8e15f70f6448888cb1857a3f6b1420009
     name: mysql
@@ -1970,7 +2038,7 @@ entries:
     version: v0.0.1-BUILD.20221017203143
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220917193207
-    created: "2023-10-23T16:12:32.739753241Z"
+    created: "2023-10-23T17:25:33.808563557Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 643e7b93517fe3006266f5dd08800f0c2396ee0f90b29ffd00bf07d1487a9290
     name: mysql
@@ -1980,7 +2048,7 @@ entries:
     version: v0.0.1-BUILD.20220917193207
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713185623
-    created: "2023-10-23T16:12:32.739547268Z"
+    created: "2023-10-23T17:25:33.808358502Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: d529ddeb25c55425bf5cf7ba93051388f57b71a5fb4dce6c55891c5ebd9dec3f
     name: mysql
@@ -1990,7 +2058,7 @@ entries:
     version: v0.0.1-BUILD.20220713185623
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713161131
-    created: "2023-10-23T16:12:32.739347376Z"
+    created: "2023-10-23T17:25:33.808157457Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 65b832212f612c2370bc5c0fff61b63284b394dbd9bd1efb7d29eaa83c099b50
     name: mysql
@@ -2000,7 +2068,7 @@ entries:
     version: v0.0.1-BUILD.20220713161131
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2023-10-23T16:12:32.739146177Z"
+    created: "2023-10-23T17:25:33.80793118Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: fb72600569435fd27a495630ef0bdc314fa91b01177b464a1fa4fd6f80d4afa3
     name: mysql
@@ -2010,7 +2078,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2023-10-23T16:12:32.738944819Z"
+    created: "2023-10-23T17:25:33.807729678Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 31a8dcbfd81dcd81daf18bc8ce658c98beae54ada9987c967892b86c24488931
     name: mysql
@@ -2020,7 +2088,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2023-10-23T16:12:32.738723309Z"
+    created: "2023-10-23T17:25:33.807523541Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 556cebab195394ba051a9d07237154d056f69fc3e8573d49f2b27f6c3d99d23e
     name: mysql
@@ -2031,7 +2099,7 @@ entries:
   postgres:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.75173513Z"
+    created: "2023-10-23T17:25:33.820769687Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: c5ecb5f65e7598c5b359370a936701afc58f2a401b94a63800ce004a06c5ffe7
     name: postgres
@@ -2040,8 +2108,18 @@ entries:
     - postgres-v0.3.6.tgz
     version: v0.3.6
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.818591243Z"
+    description: A Helm chart for deploying Eventuate Postgres image
+    digest: 43a6426f9bb2ba43c418d8798a6f21a1789f9832b143ddb7d9f18b23fb8024d8
+    name: postgres
+    type: application
+    urls:
+    - postgres-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.749634063Z"
+    created: "2023-10-23T17:25:33.818308887Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: c13a44a970fa4e8d3e115c5e84ff104bf9fea6ea8d291eb6e745b67aa30415cb
     name: postgres
@@ -2051,7 +2129,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.749381263Z"
+    created: "2023-10-23T17:25:33.817725145Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 9f10033debe52705113f9611bca9cf42be02a4e3adb4161eb41eb4c8341a0d63
     name: postgres
@@ -2061,7 +2139,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.751514698Z"
+    created: "2023-10-23T17:25:33.820526979Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 2296fd6c8204d875979df655769235ab692fb14ee9192470c2d0540173edafb2
     name: postgres
@@ -2071,7 +2149,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.751288886Z"
+    created: "2023-10-23T17:25:33.82028599Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 658d44be0b27fe6c2ea62780e7d6aa679ec78603cfea25e5e0f716a356b8d8be
     name: postgres
@@ -2081,7 +2159,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.751061587Z"
+    created: "2023-10-23T17:25:33.820024966Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: e469b62ee3e98fad0e5d0ee76e9087cf668ce2305d4181c5334153fca4e6fd31
     name: postgres
@@ -2091,7 +2169,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.750837657Z"
+    created: "2023-10-23T17:25:33.819795168Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 84f516cf431ca27ba1068c8187fa5e840bc856a296cbae24f681041a9e2307a5
     name: postgres
@@ -2101,7 +2179,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.750609354Z"
+    created: "2023-10-23T17:25:33.819569727Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: a235280ed14cd34abc3cf54af24f6864363d40121b7f5ab56d841c2a0df6ca2a
     name: postgres
@@ -2111,7 +2189,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.750372181Z"
+    created: "2023-10-23T17:25:33.819340064Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 7f63831f6a1761cea44f090210852a00e36718b82e636c7079ae79b3345571e9
     name: postgres
@@ -2121,7 +2199,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.750140427Z"
+    created: "2023-10-23T17:25:33.819072916Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: 894ccf0d254f01b235998b1a15510c300594fe8cb2f9311956c4eaea0457cf9c
     name: postgres
@@ -2131,7 +2209,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.749886352Z"
+    created: "2023-10-23T17:25:33.818838153Z"
     description: A Helm chart for deploying Eventuate MySQL image
     digest: bbf99f001edba8ea3f03e490c2d9eb7458924a1f70cd1c49660735a3af64924c
     name: postgres
@@ -2142,7 +2220,7 @@ entries:
   zipkin:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.759607587Z"
+    created: "2023-10-23T17:25:33.828923123Z"
     description: A Helm chart for Kubernetes
     digest: 9d705a1da061ddc348c73cdac29c170de6f52af98cb48d7a3acbb8e9b8fa5a3e
     name: zipkin
@@ -2152,7 +2230,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2023-10-23T16:12:32.759332225Z"
+    created: "2023-10-23T17:25:33.828643585Z"
     description: A Helm chart for Kubernetes
     digest: 5f3feea171e4f8d3b17cd51fc61d4fa031c04a8ca8edc8c298316aaac12548b7
     name: zipkin
@@ -2162,7 +2240,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-10-23T16:12:32.759037441Z"
+    created: "2023-10-23T17:25:33.82837425Z"
     description: A Helm chart for Kubernetes
     digest: 7a7ea458fd7af9a9fd50100360db7d224a9fda7cd7006fb56faa92f3c3677383
     name: zipkin
@@ -2172,7 +2250,7 @@ entries:
     version: v0.3.4
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-10-23T16:12:32.758759489Z"
+    created: "2023-10-23T17:25:33.828056417Z"
     description: A Helm chart for Kubernetes
     digest: 92b17ae743cd86c0034995820e7418ea7e88f3fc7d58b6c30e5889690bfc9bab
     name: zipkin
@@ -2181,8 +2259,18 @@ entries:
     - zipkin-v0.3.3.tgz
     version: v0.3.3
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.821620795Z"
+    description: A Helm chart for Kubernetes
+    digest: a07401b984634ce4b5b30eac7aba92593f3134e73431ee33efa1bb60b0bf5816
+    name: zipkin
+    type: application
+    urls:
+    - zipkin-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.75234268Z"
+    created: "2023-10-23T17:25:33.821332705Z"
     description: A Helm chart for Kubernetes
     digest: 9663525a10b4ea5d0eaa2134c9598cbf17e63af2506f46d1d62c1499eef81453
     name: zipkin
@@ -2192,7 +2280,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.752041681Z"
+    created: "2023-10-23T17:25:33.821055435Z"
     description: A Helm chart for Kubernetes
     digest: f7c3e71b010be144af027ff73fc7040fa0e233a2a9f0a1b4d8b6ccd7eb78ac29
     name: zipkin
@@ -2202,7 +2290,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.758485817Z"
+    created: "2023-10-23T17:25:33.827787798Z"
     description: A Helm chart for Kubernetes
     digest: aa5dfe066cc5a25187ecb1b43ff5d8da6f6283ee26f61479cd751bc5f71aaa4a
     name: zipkin
@@ -2212,7 +2300,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.758208337Z"
+    created: "2023-10-23T17:25:33.827517434Z"
     description: A Helm chart for Kubernetes
     digest: 2fa81deb95db101a245abc9fa9b72fcffe4f365d25e105e874df2cc0ddf33932
     name: zipkin
@@ -2222,7 +2310,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.757881508Z"
+    created: "2023-10-23T17:25:33.827241492Z"
     description: A Helm chart for Kubernetes
     digest: 614bf73172bd88166c2bdc70fe143a382f3ad9aa23112910e8310b2224d6649a
     name: zipkin
@@ -2232,7 +2320,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.757589769Z"
+    created: "2023-10-23T17:25:33.826953842Z"
     description: A Helm chart for Kubernetes
     digest: 996962f647a80993f7861773be276be2cf3fc54b87e310310a2a717970c7f88b
     name: zipkin
@@ -2242,7 +2330,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.757306504Z"
+    created: "2023-10-23T17:25:33.826672372Z"
     description: A Helm chart for Kubernetes
     digest: d72f2a272afdfc616e81632aaf819004766354e942410412d6c7c5e2be075add
     name: zipkin
@@ -2252,7 +2340,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.756979159Z"
+    created: "2023-10-23T17:25:33.826393521Z"
     description: A Helm chart for Kubernetes
     digest: a489c49a6cb2c69d2e830e21b74e6b5b4baa3e7a31e51ef639abd5b577efe753
     name: zipkin
@@ -2262,7 +2350,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.75668485Z"
+    created: "2023-10-23T17:25:33.826104353Z"
     description: A Helm chart for Kubernetes
     digest: 8ddc909909524a5c60136a14f5dd9581a56b0925fae8c10d796aeea5b71b583e
     name: zipkin
@@ -2272,7 +2360,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.756366443Z"
+    created: "2023-10-23T17:25:33.825802091Z"
     description: A Helm chart for Kubernetes
     digest: 6fc3bb63b3a52caaba7fd364c8e9d3315444eb01e14440542db3f02cbb9c84d9
     name: zipkin
@@ -2282,7 +2370,7 @@ entries:
     version: v0.1.0-BUILD.20230621095230
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230309222954
-    created: "2023-10-23T16:12:32.755857369Z"
+    created: "2023-10-23T17:25:33.825498053Z"
     description: A Helm chart for Kubernetes
     digest: aa1a9e4f5885eed8c3e64c672e5dc5e20db79cc846b5e58aa7187c6ccc569496
     name: zipkin
@@ -2292,7 +2380,7 @@ entries:
     version: v0.1.0-BUILD.20230309222954
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230307180532
-    created: "2023-10-23T16:12:32.755141065Z"
+    created: "2023-10-23T17:25:33.824932354Z"
     description: A Helm chart for Kubernetes
     digest: ca4443c9205c33838c577e7c3d99502375743cfd9f578aa2515a6d0da5e473a1
     name: zipkin
@@ -2302,7 +2390,7 @@ entries:
     version: v0.1.0-BUILD.20230307180532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230213071046
-    created: "2023-10-23T16:12:32.754586112Z"
+    created: "2023-10-23T17:25:33.824261877Z"
     description: A Helm chart for Kubernetes
     digest: 23387c2382f8678d33dc852dc87d888d4318cb314b6fa0ceacbfa6f6f67d19da
     name: zipkin
@@ -2312,7 +2400,7 @@ entries:
     version: v0.1.0-BUILD.20230213071046
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201210532
-    created: "2023-10-23T16:12:32.754310576Z"
+    created: "2023-10-23T17:25:33.823591423Z"
     description: A Helm chart for Kubernetes
     digest: 4d5c92cdda8038b66444fcaa0b4924808a84ba7bd92f78913167981728dbeadd
     name: zipkin
@@ -2322,7 +2410,7 @@ entries:
     version: v0.1.0-BUILD.20230201210532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201204551
-    created: "2023-10-23T16:12:32.754013676Z"
+    created: "2023-10-23T17:25:33.823297703Z"
     description: A Helm chart for Kubernetes
     digest: 6fbe53269e1ea8ac9eef155c661430df4ffcc21515471472236b6a6597ba377b
     name: zipkin
@@ -2332,7 +2420,7 @@ entries:
     version: v0.1.0-BUILD.20230201204551
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194310
-    created: "2023-10-23T16:12:32.753727239Z"
+    created: "2023-10-23T17:25:33.823025284Z"
     description: A Helm chart for Kubernetes
     digest: 5aea83a81ee8d3a62b3b8a12db44771ee6667b31cf91182e7dceb0dacdb22ac7
     name: zipkin
@@ -2342,7 +2430,7 @@ entries:
     version: v0.1.0-BUILD.20230201194310
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194228
-    created: "2023-10-23T16:12:32.753454635Z"
+    created: "2023-10-23T17:25:33.822748051Z"
     description: A Helm chart for Kubernetes
     digest: ab0522f5344e678cf01804e9f4778420d00c6f8bdc777f21006d84acb36b6189
     name: zipkin
@@ -2352,7 +2440,7 @@ entries:
     version: v0.1.0-BUILD.20230201194228
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194057
-    created: "2023-10-23T16:12:32.75318332Z"
+    created: "2023-10-23T17:25:33.82246826Z"
     description: A Helm chart for Kubernetes
     digest: 48d32e2b27a22c2959c8f87961eaa0ac2e851af338dbabefcf2817448211ebba
     name: zipkin
@@ -2362,7 +2450,7 @@ entries:
     version: v0.1.0-BUILD.20230201194057
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201193127
-    created: "2023-10-23T16:12:32.75290899Z"
+    created: "2023-10-23T17:25:33.822174631Z"
     description: A Helm chart for Kubernetes
     digest: 750fc7d0808a9dfd2b1767ebc46d0c72e0a1933ae69f3dfe43d244cd1dc8ff9a
     name: zipkin
@@ -2372,7 +2460,7 @@ entries:
     version: v0.1.0-BUILD.20230201193127
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201191338
-    created: "2023-10-23T16:12:32.752629278Z"
+    created: "2023-10-23T17:25:33.821896901Z"
     description: A Helm chart for Kubernetes
     digest: bb03fcf0ba041cfb10e8221292230b0909b9e77ecbd6d90886d843a5ac834d99
     name: zipkin
@@ -2383,7 +2471,7 @@ entries:
   zookeeper:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2023-10-23T16:12:32.773104073Z"
+    created: "2023-10-23T17:25:33.84267102Z"
     description: A Helm chart for Kubernetes
     digest: 80579da28ecff7b13f6fe8917756da4a97d93dd7c85c6bac60ba5abfe1580931
     name: zookeeper
@@ -2393,7 +2481,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2023-10-23T16:12:32.772814466Z"
+    created: "2023-10-23T17:25:33.84235148Z"
     description: A Helm chart for Kubernetes
     digest: 65a0efbe50e287ffbd90837a5b1d018410c8fd40f887bcb06ec0f04dc71ca1d0
     name: zookeeper
@@ -2403,7 +2491,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-10-23T16:12:32.772513274Z"
+    created: "2023-10-23T17:25:33.84206917Z"
     description: A Helm chart for Kubernetes
     digest: 844b64209dd5f13c497637fd6c670bbf58d504003f95c963e046fd9da5db5e3d
     name: zookeeper
@@ -2413,7 +2501,7 @@ entries:
     version: v0.3.4
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-10-23T16:12:32.772227539Z"
+    created: "2023-10-23T17:25:33.841783185Z"
     description: A Helm chart for Kubernetes
     digest: a50dea7ea614bce7bd0919c26dd8c9fdf0356d3c4aba2ec08db3e60b8ce49233
     name: zookeeper
@@ -2423,7 +2511,7 @@ entries:
     version: v0.3.3
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-10-23T16:12:32.771939506Z"
+    created: "2023-10-23T17:25:33.841474558Z"
     description: A Helm chart for Kubernetes
     digest: 67cd04a68e149ea0c889dbb0345eb57363a013b59532d2b8eea4c3b7872ce5e6
     name: zookeeper
@@ -2432,8 +2520,18 @@ entries:
     - zookeeper-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
+    appVersion: 0.1.0-BUILD.20231023172533
+    created: "2023-10-23T17:25:33.829816091Z"
+    description: A Helm chart for Kubernetes
+    digest: d0cb4845f3aa40aa3e999cb555bafe9d7fe8a9b987f4373880d7bb8517cfcebe
+    name: zookeeper
+    type: application
+    urls:
+    - zookeeper-0.1.0-BUILD.20231023172533.tgz
+    version: 0.1.0-BUILD.20231023172533
+  - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231023161232
-    created: "2023-10-23T16:12:32.76021179Z"
+    created: "2023-10-23T17:25:33.829520085Z"
     description: A Helm chart for Kubernetes
     digest: c0c6702ff7a4b95bf1ce117e2c4463abe115275b27722c8270a39885d710b686
     name: zookeeper
@@ -2443,7 +2541,7 @@ entries:
     version: 0.1.0-BUILD.20231023161232
   - apiVersion: v2
     appVersion: 0.1.0-BUILD.20231022234129
-    created: "2023-10-23T16:12:32.759917273Z"
+    created: "2023-10-23T17:25:33.829210358Z"
     description: A Helm chart for Kubernetes
     digest: 4068b4a874bf888694c2ca4e3b9a7a83b4a1c3b264464fcb40be0575922f1963
     name: zookeeper
@@ -2453,7 +2551,7 @@ entries:
     version: 0.1.0-BUILD.20231022234129
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20231011010642
-    created: "2023-10-23T16:12:32.77164366Z"
+    created: "2023-10-23T17:25:33.841193065Z"
     description: A Helm chart for Kubernetes
     digest: 5488127567b02fdded2ae4f2eee743ae5d253b6a76afd7965d3b86066324e3d8
     name: zookeeper
@@ -2463,7 +2561,7 @@ entries:
     version: v0.1.0-BUILD.20231011010642
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230831014905
-    created: "2023-10-23T16:12:32.771332563Z"
+    created: "2023-10-23T17:25:33.840899621Z"
     description: A Helm chart for Kubernetes
     digest: 27fc3ddb28bf7ef952b15f962fbed122ca0b2d117a29252ab45faf8f8f3aa706
     name: zookeeper
@@ -2473,7 +2571,7 @@ entries:
     version: v0.1.0-BUILD.20230831014905
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230802000103
-    created: "2023-10-23T16:12:32.771033648Z"
+    created: "2023-10-23T17:25:33.840586417Z"
     description: A Helm chart for Kubernetes
     digest: aba49188b9d85b8dfce9607721cf16c111f13f072f276e6e4f8d62d0cfc5dfec
     name: zookeeper
@@ -2483,7 +2581,7 @@ entries:
     version: v0.1.0-BUILD.20230802000103
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230801231723
-    created: "2023-10-23T16:12:32.770715061Z"
+    created: "2023-10-23T17:25:33.840275099Z"
     description: A Helm chart for Kubernetes
     digest: 2c77ad51afc2a6a76960a3e834bd5cfca2fe8532ab7bce47230cf80d471d9526
     name: zookeeper
@@ -2493,7 +2591,7 @@ entries:
     version: v0.1.0-BUILD.20230801231723
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230710151355
-    created: "2023-10-23T16:12:32.770129162Z"
+    created: "2023-10-23T17:25:33.839947954Z"
     description: A Helm chart for Kubernetes
     digest: a51434956fc0330bce02ea86f2419dd45e8dbf4b75c569986c63a4e019f65c65
     name: zookeeper
@@ -2503,7 +2601,7 @@ entries:
     version: v0.1.0-BUILD.20230710151355
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707131906
-    created: "2023-10-23T16:12:32.769231811Z"
+    created: "2023-10-23T17:25:33.839616361Z"
     description: A Helm chart for Kubernetes
     digest: ddf9e2292a92820967e2737234b11f1cd0a6dcad00f7b772cc6e8ad6251e62d8
     name: zookeeper
@@ -2513,7 +2611,7 @@ entries:
     version: v0.1.0-BUILD.20230707131906
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230707103130
-    created: "2023-10-23T16:12:32.768939257Z"
+    created: "2023-10-23T17:25:33.838983807Z"
     description: A Helm chart for Kubernetes
     digest: fb42c5c3a750b93e281dbcd32874d466db9e5fe017f04080aa8b67252c3cd74c
     name: zookeeper
@@ -2523,7 +2621,7 @@ entries:
     version: v0.1.0-BUILD.20230707103130
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230621095230
-    created: "2023-10-23T16:12:32.768644278Z"
+    created: "2023-10-23T17:25:33.83811962Z"
     description: A Helm chart for Kubernetes
     digest: 30400e232f7a130899481c5fc39f67945eadbf3f21afe3711d1da40af68c6b13
     name: zookeeper
@@ -2533,7 +2631,7 @@ entries:
     version: v0.1.0-BUILD.20230621095230
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230309222954
-    created: "2023-10-23T16:12:32.768333103Z"
+    created: "2023-10-23T17:25:33.837833785Z"
     description: A Helm chart for Kubernetes
     digest: e3f49ac4d266873a03bab320ded8a52dd83d329649292749181911437a80e354
     name: zookeeper
@@ -2543,7 +2641,7 @@ entries:
     version: v0.1.0-BUILD.20230309222954
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230307180532
-    created: "2023-10-23T16:12:32.768049531Z"
+    created: "2023-10-23T17:25:33.837544432Z"
     description: A Helm chart for Kubernetes
     digest: a194f0f586ca063fc9f12800f46f265423f190f63fadda86e6f765b863df396d
     name: zookeeper
@@ -2553,7 +2651,7 @@ entries:
     version: v0.1.0-BUILD.20230307180532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230213071046
-    created: "2023-10-23T16:12:32.767722098Z"
+    created: "2023-10-23T17:25:33.837263914Z"
     description: A Helm chart for Kubernetes
     digest: 556515d98413fbe6078f4736af88a510e526960790716ec22c4279a8ed720ec5
     name: zookeeper
@@ -2563,7 +2661,7 @@ entries:
     version: v0.1.0-BUILD.20230213071046
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201210532
-    created: "2023-10-23T16:12:32.767420555Z"
+    created: "2023-10-23T17:25:33.83698225Z"
     description: A Helm chart for Kubernetes
     digest: ce968ebea44a764bb6613585d148037780c842697dd9fd6604e3db3bc4647478
     name: zookeeper
@@ -2573,7 +2671,7 @@ entries:
     version: v0.1.0-BUILD.20230201210532
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201204551
-    created: "2023-10-23T16:12:32.767135422Z"
+    created: "2023-10-23T17:25:33.836685757Z"
     description: A Helm chart for Kubernetes
     digest: 20adf3d419a4a4e51df7654f0f4094bbd5eac26fcdea66f2babdd09627252a3a
     name: zookeeper
@@ -2583,7 +2681,7 @@ entries:
     version: v0.1.0-BUILD.20230201204551
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194310
-    created: "2023-10-23T16:12:32.766854067Z"
+    created: "2023-10-23T17:25:33.836393775Z"
     description: A Helm chart for Kubernetes
     digest: 3aebb8c3addf2a95c79465a232603c1a7a0c9cca420f6b83605877895a8dce04
     name: zookeeper
@@ -2593,7 +2691,7 @@ entries:
     version: v0.1.0-BUILD.20230201194310
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194228
-    created: "2023-10-23T16:12:32.766572043Z"
+    created: "2023-10-23T17:25:33.836099768Z"
     description: A Helm chart for Kubernetes
     digest: d91357348fb7303e211ec4b2386fc700e0c62b0f80503b51050474da22ffa1b6
     name: zookeeper
@@ -2603,7 +2701,7 @@ entries:
     version: v0.1.0-BUILD.20230201194228
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201194057
-    created: "2023-10-23T16:12:32.766264866Z"
+    created: "2023-10-23T17:25:33.835791488Z"
     description: A Helm chart for Kubernetes
     digest: 16c37766d08d4d5963a0ce95e11cc14957ecef68f2bc083414545a7af0658c05
     name: zookeeper
@@ -2613,7 +2711,7 @@ entries:
     version: v0.1.0-BUILD.20230201194057
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201193127
-    created: "2023-10-23T16:12:32.765955643Z"
+    created: "2023-10-23T17:25:33.835500569Z"
     description: A Helm chart for Kubernetes
     digest: 8ec6474a00850f2ce325ee379803564ac12680b965043cf150bbb0fa1024780d
     name: zookeeper
@@ -2623,7 +2721,7 @@ entries:
     version: v0.1.0-BUILD.20230201193127
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20230201191338
-    created: "2023-10-23T16:12:32.765646661Z"
+    created: "2023-10-23T17:25:33.835205239Z"
     description: A Helm chart for Kubernetes
     digest: 1755c8304a60c96328f33e7242233fa61515e18bf24a601c93cb0092babd7d50
     name: zookeeper
@@ -2633,7 +2731,7 @@ entries:
     version: v0.1.0-BUILD.20230201191338
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023051447
-    created: "2023-10-23T16:12:32.765346989Z"
+    created: "2023-10-23T17:25:33.83492247Z"
     description: A Helm chart for Kubernetes
     digest: be37fb017db0dc7b4ff680fd9a64dc1bdab59d7fdb6ad82b020e32821c1f2132
     name: zookeeper
@@ -2643,7 +2741,7 @@ entries:
     version: v0.1.0-BUILD.20221023051447
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221023000628
-    created: "2023-10-23T16:12:32.765042781Z"
+    created: "2023-10-23T17:25:33.834632803Z"
     description: A Helm chart for Kubernetes
     digest: b51e15b49cc228d26266a7c444c8c4a68e33802be6caa7c40e48397858ec9c1d
     name: zookeeper
@@ -2653,7 +2751,7 @@ entries:
     version: v0.1.0-BUILD.20221023000628
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022163111
-    created: "2023-10-23T16:12:32.764737671Z"
+    created: "2023-10-23T17:25:33.834332914Z"
     description: A Helm chart for Kubernetes
     digest: 8d20c71e34d9d5795974416c24de00f3cb5cce93efb4276d99ab0ab292e66e8f
     name: zookeeper
@@ -2663,7 +2761,7 @@ entries:
     version: v0.1.0-BUILD.20221022163111
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221022162025
-    created: "2023-10-23T16:12:32.76444811Z"
+    created: "2023-10-23T17:25:33.834046654Z"
     description: A Helm chart for Kubernetes
     digest: 28c75a7ef25ccec848a912812283cb71b39b60545e2abbfb82f5804dc2508324
     name: zookeeper
@@ -2673,7 +2771,7 @@ entries:
     version: v0.1.0-BUILD.20221022162025
   - apiVersion: v2
     appVersion: v0.1.0-BUILD.20221021174914
-    created: "2023-10-23T16:12:32.764140238Z"
+    created: "2023-10-23T17:25:33.83375598Z"
     description: A Helm chart for Kubernetes
     digest: 6d8f71a775ea1defe63928876714a13d6a39ea48c12e07759bdc2234facf7194
     name: zookeeper
@@ -2683,7 +2781,7 @@ entries:
     version: v0.1.0-BUILD.20221021174914
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221018174433
-    created: "2023-10-23T16:12:32.763830934Z"
+    created: "2023-10-23T17:25:33.833463117Z"
     description: A Helm chart for Kubernetes
     digest: 6d54e56655329d060bdb70d6a1f7a6ea270a08978c2eb8552ca3fa2bcb2c91b3
     name: zookeeper
@@ -2693,7 +2791,7 @@ entries:
     version: v0.0.1-BUILD.20221018174433
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017205743
-    created: "2023-10-23T16:12:32.763513398Z"
+    created: "2023-10-23T17:25:33.833151785Z"
     description: A Helm chart for Kubernetes
     digest: 49151e1f114eb422941e0b17c90065472a48c062ae9dab5a42d960e024cb9886
     name: zookeeper
@@ -2703,7 +2801,7 @@ entries:
     version: v0.0.1-BUILD.20221017205743
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20221017203143
-    created: "2023-10-23T16:12:32.762952274Z"
+    created: "2023-10-23T17:25:33.832839206Z"
     description: A Helm chart for Kubernetes
     digest: e0ea22e2876b202b58247a8be78f2f6f3b62660ba3712492dda801e4f9ff3140
     name: zookeeper
@@ -2713,7 +2811,7 @@ entries:
     version: v0.0.1-BUILD.20221017203143
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220917193207
-    created: "2023-10-23T16:12:32.761994105Z"
+    created: "2023-10-23T17:25:33.832491549Z"
     description: A Helm chart for Kubernetes
     digest: 27a61f1853248b486a4716e7b0491b101c8c3a9453dbabd9a8355a5365f1db2f
     name: zookeeper
@@ -2723,7 +2821,7 @@ entries:
     version: v0.0.1-BUILD.20220917193207
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713185623
-    created: "2023-10-23T16:12:32.761688567Z"
+    created: "2023-10-23T17:25:33.831841433Z"
     description: A Helm chart for Kubernetes
     digest: c8297d0812f025a436cb4fd3b922e4f0631050e442182d36635ef7db67c96c43
     name: zookeeper
@@ -2733,7 +2831,7 @@ entries:
     version: v0.0.1-BUILD.20220713185623
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220713161131
-    created: "2023-10-23T16:12:32.761378438Z"
+    created: "2023-10-23T17:25:33.830980525Z"
     description: A Helm chart for Kubernetes
     digest: 79dad5ac908df5c021575a5edcf8033fe2ad418838fc587b93089c795441b90e
     name: zookeeper
@@ -2743,7 +2841,7 @@ entries:
     version: v0.0.1-BUILD.20220713161131
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706210808
-    created: "2023-10-23T16:12:32.761090206Z"
+    created: "2023-10-23T17:25:33.830695858Z"
     description: A Helm chart for Kubernetes
     digest: ca67a8f4b0ff64e41bbc9d48b2f33901bf6069ff42e6e5b7c6ffe3bcddb03c20
     name: zookeeper
@@ -2753,7 +2851,7 @@ entries:
     version: v0.0.1-BUILD.20220706210808
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706194036
-    created: "2023-10-23T16:12:32.760801369Z"
+    created: "2023-10-23T17:25:33.83040523Z"
     description: A Helm chart for Kubernetes
     digest: 2dc466ace623592eab87d856f005040618eecf14358399aab240612ab4d32fe6
     name: zookeeper
@@ -2763,7 +2861,7 @@ entries:
     version: v0.0.1-BUILD.20220706194036
   - apiVersion: v2
     appVersion: v0.0.1-BUILD.20220706192730
-    created: "2023-10-23T16:12:32.760519506Z"
+    created: "2023-10-23T17:25:33.830099684Z"
     description: A Helm chart for Kubernetes
     digest: 2f95bd689848e79ca9ebc5a0c24505caed3a50ae7d5db3cc25297ee430f301be
     name: zookeeper
@@ -2771,4 +2869,4 @@ entries:
     urls:
     - zookeeper-v0.0.1-BUILD.20220706192730.tgz
     version: v0.0.1-BUILD.20220706192730
-generated: "2023-10-23T16:12:32.657662353Z"
+generated: "2023-10-23T17:25:33.72423802Z"
