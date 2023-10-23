@@ -1,6 +1,6 @@
 apiVersion: v2
 name: postgres
-description: A Helm chart for deploying Eventuate MySQL image
+description: A Helm chart for deploying Eventuate Postgres image
 type: application
 version: v0.1.0
 appVersion: v0.1.0
