@@ -6,10 +6,25 @@ metadata:
     {{- include "authorization-server.labels" . | nindent 4 }}
   annotations:
     "helm.sh/hook": test
+    helm.sh/hook-delete-policy: hook-succeeded
 spec:
   containers:
-    - name: wget
-      image: busybox
-      command: ['wget']
-      args: ['{{ include "authorization-server.fullname" . }}:{{ .Values.service.port }}']
+    - name: curl
+      image: curlimages/curl:8.4.0
+      command: ['curl']
+      args:
+        - "--fail-with-body"
+        - "-X"
+        - "POST"
+        - "-u"
+        - "messaging-client:secret"
+        - "-d"
+        - "client_id=messaging-client"
+        - "-d"
+        - "username=user"
+        - "-d"
+        - "password=password"
+        - "-d"
+        - "grant_type=password"
+        - 'http://{{ include "authorization-server.fullname" . }}:{{ .Values.service.port }}/oauth2/token'
   restartPolicy: Never

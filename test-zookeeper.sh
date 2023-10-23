@@ -13,6 +13,10 @@ echo installing
 
 helm install --wait $RN charts/${NAME}
 
+echo running helm test
+
+helm test $RN
+
 echo testing
 
 $POD_EXEC_I "bin/zkCli.sh -server $RN:2181" <<END
