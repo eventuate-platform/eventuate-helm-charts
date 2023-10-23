@@ -22,7 +22,7 @@ $POD_EXEC "echo 'create table foo (bar varchar(100));' | psql -U eventuate -d $T
 
 echo deleting
 
-kubectl delete po $POD
+kubectl delete po --wait=true $POD
 
 kubectl wait --for=condition=ready pod --timeout=90s $POD
 

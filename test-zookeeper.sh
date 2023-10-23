@@ -27,7 +27,7 @@ END
 
 echo deleting
 
-kubectl delete po $POD
+kubectl delete po --wait=true $POD
 
 kubectl wait --for=condition=ready pod --timeout=90s $POD
 
