@@ -1,6 +1,63 @@
 = Eventuate Helm Charts
 
-Simple helm charts for deploying Eventuate platform services on Kubernetes.
+Simple Helm charts for deploying Eventuate platform services on Kubernetes:
 
-Deploys images that support Intel/AMD and Arm.
+* https://github.com/eventuate-examples/eventuate-examples-spring-authorization-server[Eventuate Examples Spring Authorization Server]
+* https://github.com/eventuate-foundation/eventuate-cdc[Eventuate CDC Service]
+* https://github.com/eventuate-foundation/eventuate-messaging-kafka/tree/master/kafka[Apache Kafka]
+* https://github.com/eventuate-foundation/eventuate-common/blob/master/mysql/Dockerfile-vanilla-mysql8[MySql 8]
+* https://github.com/eventuate-foundation/eventuate-common/blob/master/postgres/Dockerfile-vanilla[Postgres]
+* https://github.com/eventuate-foundation/eventuate-common/blob/master/zookeeper/Dockerfile[Apache Zookeeper]
+
+These charts deploy images that support both Intel/AMD and ARM.
+
+== Configuring the Eventuate CDC service
+
+This chart requires a `values.yaml` file that configures the CDC service to read from one or more databases (the https://microservices.io/patterns/data/transactional-outbox.html[Transaction Outbox pattern]) and publish messages to Kafka.
+
+Here's the skeleton of a `values.yaml` file:
+
+[source,yaml]
+----
+cdc:
+  envFroms: []
+  zookeeper: <host name of Apache Zookeeper>
+  kafka: <host name of Apache Kafka>
+  # Alternatives:
+  #   zookeeperConnectString: zookeeper-a:2181,zookeeper-b:2181,zookeeper-c:2181
+  #   kafkaBootstrapBrokers: kafka-a:9092,kafka-b:9092,kafka-c:9092
+
+  databaseServers:
+    - customer-service-postgres:
+      readerType: <postgres-wal|mysql-binlog>
+      host: <host name of database server>
+      credentials:
+        username: 
+           value: 
+           # valueFrom: ...
+        password: 
+           value: 
+           # valueFrom: ...
+      databases: 
+        - <logical database>
+----
+
+Note: 
+
+* `databaseServers` is an array of one or more databases
+* the database `username` and `password` are not literal strings. They are YAML values - `value:` or `valueFrom:` - suitable for configuring a Kubernetes Pod's environment variables. For example, here's how you would get the password from a Kubernetes secret:
+
+[source,yaml]
+----
+        password: 
+          valueFrom:
+            secretKeyRef:
+              name: <secret name>
+              key: <secret key>
+----
+
+
+
+
+
 
