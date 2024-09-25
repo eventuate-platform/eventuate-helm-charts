@@ -1,0 +1,22 @@
+cdc:
+  envFroms: []
+  zookeeper: kafka-zookeeper
+  kafka: kafka
+  databaseServers:
+    - customer-service-postgres:
+      readerType: postgres-wal
+      host: customer-service-postgres
+      credentials:
+        username:
+          valueFrom:
+            secretKeyRef:
+              name: customer-service-postgres-database-credentials
+              key: username
+        password:
+          valueFrom:
+            secretKeyRef:
+              name: customer-service-postgres-database-credentials
+              key: password
+      databases: 
+        - customer_serviceX
+        - order_service

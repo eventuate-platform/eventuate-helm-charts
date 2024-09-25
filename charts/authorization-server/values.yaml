@@ -8,7 +8,7 @@ image:
   repository: eventuateio/eventuate-examples-spring-authorization-server
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.1.0.BUILD-SNAPSHOT"
+  tag: "0.1.0.RELEASE"
 
 imagePullSecrets: []
 nameOverride: ""
